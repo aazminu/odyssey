@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-04-06T19:33:24.215Z"
+    "x-generation-date": "2025-04-06T03:02:21.233Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -3281,6 +3281,9 @@
                         "slug": {
                           "type": "string"
                         },
+                        "isArchived": {
+                          "type": "boolean"
+                        },
                         "creator": {
                           "type": "object",
                           "properties": {
@@ -3379,9 +3382,6 @@
                               }
                             }
                           }
-                        },
-                        "isArchived": {
-                          "type": "boolean"
                         },
                         "createdAt": {
                           "type": "string",
@@ -5412,6 +5412,9 @@
                                                                             "slug": {
                                                                               "type": "string"
                                                                             },
+                                                                            "isArchived": {
+                                                                              "type": "boolean"
+                                                                            },
                                                                             "creator": {
                                                                               "type": "object",
                                                                               "properties": {
@@ -5659,9 +5662,6 @@
                                                                                   }
                                                                                 }
                                                                               }
-                                                                            },
-                                                                            "isArchived": {
-                                                                              "type": "boolean"
                                                                             },
                                                                             "createdAt": {
                                                                               "type": "string",
@@ -9001,6 +9001,9 @@
                                                                               "slug": {
                                                                                 "type": "string"
                                                                               },
+                                                                              "isArchived": {
+                                                                                "type": "boolean"
+                                                                              },
                                                                               "creator": {
                                                                                 "type": "object",
                                                                                 "properties": {
@@ -9248,9 +9251,6 @@
                                                                                     }
                                                                                   }
                                                                                 }
-                                                                              },
-                                                                              "isArchived": {
-                                                                                "type": "boolean"
                                                                               },
                                                                               "createdAt": {
                                                                                 "type": "string",
@@ -12197,6 +12197,9 @@
                                                                                                         "slug": {
                                                                                                           "type": "string"
                                                                                                         },
+                                                                                                        "isArchived": {
+                                                                                                          "type": "boolean"
+                                                                                                        },
                                                                                                         "creator": {
                                                                                                           "type": "object",
                                                                                                           "properties": {
@@ -12444,9 +12447,6 @@
                                                                                                               }
                                                                                                             }
                                                                                                           }
-                                                                                                        },
-                                                                                                        "isArchived": {
-                                                                                                          "type": "boolean"
                                                                                                         },
                                                                                                         "createdAt": {
                                                                                                           "type": "string",
@@ -16502,6 +16502,9 @@
                                                                 "slug": {
                                                                   "type": "string"
                                                                 },
+                                                                "isArchived": {
+                                                                  "type": "boolean"
+                                                                },
                                                                 "creator": {
                                                                   "type": "object",
                                                                   "properties": {
@@ -16933,9 +16936,6 @@
                                                                       }
                                                                     }
                                                                   }
-                                                                },
-                                                                "isArchived": {
-                                                                  "type": "boolean"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -19503,6 +19503,9 @@
                                                                                                           "slug": {
                                                                                                             "type": "string"
                                                                                                           },
+                                                                                                          "isArchived": {
+                                                                                                            "type": "boolean"
+                                                                                                          },
                                                                                                           "creator": {
                                                                                                             "type": "object",
                                                                                                             "properties": {
@@ -19750,9 +19753,6 @@
                                                                                                                 }
                                                                                                               }
                                                                                                             }
-                                                                                                          },
-                                                                                                          "isArchived": {
-                                                                                                            "type": "boolean"
                                                                                                           },
                                                                                                           "createdAt": {
                                                                                                             "type": "string",
@@ -23608,6 +23608,9 @@
                                                                             "slug": {
                                                                               "type": "string"
                                                                             },
+                                                                            "isArchived": {
+                                                                              "type": "boolean"
+                                                                            },
                                                                             "creator": {
                                                                               "type": "object",
                                                                               "properties": {
@@ -23855,9 +23858,6 @@
                                                                                   }
                                                                                 }
                                                                               }
-                                                                            },
-                                                                            "isArchived": {
-                                                                              "type": "boolean"
                                                                             },
                                                                             "createdAt": {
                                                                               "type": "string",
@@ -27003,6 +27003,9 @@
                                                               "slug": {
                                                                 "type": "string"
                                                               },
+                                                              "isArchived": {
+                                                                "type": "boolean"
+                                                              },
                                                               "creator": {
                                                                 "type": "object",
                                                                 "properties": {
@@ -27434,9 +27437,6 @@
                                                                     }
                                                                   }
                                                                 }
-                                                              },
-                                                              "isArchived": {
-                                                                "type": "boolean"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -30435,6 +30435,9 @@
                                                               "slug": {
                                                                 "type": "string"
                                                               },
+                                                              "isArchived": {
+                                                                "type": "boolean"
+                                                              },
                                                               "creator": {
                                                                 "type": "object",
                                                                 "properties": {
@@ -30866,9 +30869,6 @@
                                                                     }
                                                                   }
                                                                 }
-                                                              },
-                                                              "isArchived": {
-                                                                "type": "boolean"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -33833,6 +33833,9 @@
                                                                 "slug": {
                                                                   "type": "string"
                                                                 },
+                                                                "isArchived": {
+                                                                  "type": "boolean"
+                                                                },
                                                                 "creator": {
                                                                   "type": "object",
                                                                   "properties": {
@@ -34264,9 +34267,6 @@
                                                                       }
                                                                     }
                                                                   }
-                                                                },
-                                                                "isArchived": {
-                                                                  "type": "boolean"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -35404,6 +35404,9 @@
               "slug": {
                 "type": "string"
               },
+              "isArchived": {
+                "type": "boolean"
+              },
               "creator": {
                 "oneOf": [
                   {
@@ -35472,9 +35475,6 @@
                   ],
                   "example": "string or id"
                 }
-              },
-              "isArchived": {
-                "type": "boolean"
               }
             }
           }
@@ -37303,6 +37303,9 @@
                                                                 "slug": {
                                                                   "type": "string"
                                                                 },
+                                                                "isArchived": {
+                                                                  "type": "boolean"
+                                                                },
                                                                 "creator": {
                                                                   "type": "object",
                                                                   "properties": {
@@ -37734,9 +37737,6 @@
                                                                       }
                                                                     }
                                                                   }
-                                                                },
-                                                                "isArchived": {
-                                                                  "type": "boolean"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -38787,6 +38787,9 @@
           "slug": {
             "type": "string"
           },
+          "isArchived": {
+            "type": "boolean"
+          },
           "creator": {
             "type": "object",
             "properties": {
@@ -38885,9 +38888,6 @@
                 }
               }
             }
-          },
-          "isArchived": {
-            "type": "boolean"
           },
           "createdAt": {
             "type": "string",
@@ -40829,6 +40829,9 @@
                                                               "slug": {
                                                                 "type": "string"
                                                               },
+                                                              "isArchived": {
+                                                                "type": "boolean"
+                                                              },
                                                               "creator": {
                                                                 "type": "object",
                                                                 "properties": {
@@ -41260,9 +41263,6 @@
                                                                     }
                                                                   }
                                                                 }
-                                                              },
-                                                              "isArchived": {
-                                                                "type": "boolean"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -44316,6 +44316,9 @@
                                                                               "slug": {
                                                                                 "type": "string"
                                                                               },
+                                                                              "isArchived": {
+                                                                                "type": "boolean"
+                                                                              },
                                                                               "creator": {
                                                                                 "type": "object",
                                                                                 "properties": {
@@ -44563,9 +44566,6 @@
                                                                                     }
                                                                                   }
                                                                                 }
-                                                                              },
-                                                                              "isArchived": {
-                                                                                "type": "boolean"
                                                                               },
                                                                               "createdAt": {
                                                                                 "type": "string",
@@ -47682,6 +47682,9 @@
                                                                                           "slug": {
                                                                                             "type": "string"
                                                                                           },
+                                                                                          "isArchived": {
+                                                                                            "type": "boolean"
+                                                                                          },
                                                                                           "creator": {
                                                                                             "type": "object",
                                                                                             "properties": {
@@ -47929,9 +47932,6 @@
                                                                                                 }
                                                                                               }
                                                                                             }
-                                                                                          },
-                                                                                          "isArchived": {
-                                                                                            "type": "boolean"
                                                                                           },
                                                                                           "createdAt": {
                                                                                             "type": "string",
@@ -51366,6 +51366,9 @@
                                                                               "slug": {
                                                                                 "type": "string"
                                                                               },
+                                                                              "isArchived": {
+                                                                                "type": "boolean"
+                                                                              },
                                                                               "creator": {
                                                                                 "type": "object",
                                                                                 "properties": {
@@ -51613,9 +51616,6 @@
                                                                                     }
                                                                                   }
                                                                                 }
-                                                                              },
-                                                                              "isArchived": {
-                                                                                "type": "boolean"
                                                                               },
                                                                               "createdAt": {
                                                                                 "type": "string",
@@ -55265,6 +55265,9 @@
                                                                               "slug": {
                                                                                 "type": "string"
                                                                               },
+                                                                              "isArchived": {
+                                                                                "type": "boolean"
+                                                                              },
                                                                               "creator": {
                                                                                 "type": "object",
                                                                                 "properties": {
@@ -55512,9 +55515,6 @@
                                                                                     }
                                                                                   }
                                                                                 }
-                                                                              },
-                                                                              "isArchived": {
-                                                                                "type": "boolean"
                                                                               },
                                                                               "createdAt": {
                                                                                 "type": "string",
