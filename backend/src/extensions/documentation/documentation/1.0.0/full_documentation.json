@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-05-09T19:11:11.390Z"
+    "x-generation-date": "2025-05-13T20:51:51.305Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -25,7 +25,7 @@
       "description": "Development server"
     },
     {
-      "url": "https://www.data.khouryodyssey.org/api",
+      "url": "https://data.khouryodyssey.org/api",
       "description": "Production server"
     }
   ],
