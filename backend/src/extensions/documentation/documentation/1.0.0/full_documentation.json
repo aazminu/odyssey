@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-05-13T20:51:51.305Z"
+    "x-generation-date": "2025-05-15T23:30:39.232Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -25,7 +25,7 @@
       "description": "Development server"
     },
     {
-      "url": "https://data.khouryodyssey.org/api",
+      "url": "https://www.data.khouryodyssey.org/api",
       "description": "Production server"
     }
   ],
@@ -1378,6 +1378,9 @@
                                                                                                                             }
                                                                                                                           }
                                                                                                                         }
+                                                                                                                      },
+                                                                                                                      "blockId": {
+                                                                                                                        "type": "integer"
                                                                                                                       },
                                                                                                                       "createdAt": {
                                                                                                                         "type": "string",
@@ -4875,6 +4878,9 @@
                                                                                                             }
                                                                                                           }
                                                                                                         }
+                                                                                                      },
+                                                                                                      "blockId": {
+                                                                                                        "type": "integer"
                                                                                                       },
                                                                                                       "createdAt": {
                                                                                                         "type": "string",
@@ -8464,6 +8470,9 @@
                                                                                                               }
                                                                                                             }
                                                                                                           }
+                                                                                                        },
+                                                                                                        "blockId": {
+                                                                                                          "type": "integer"
                                                                                                         },
                                                                                                         "createdAt": {
                                                                                                           "type": "string",
@@ -13050,6 +13059,9 @@
                                                                                               }
                                                                                             }
                                                                                           },
+                                                                                          "blockId": {
+                                                                                            "type": "integer"
+                                                                                          },
                                                                                           "createdAt": {
                                                                                             "type": "string",
                                                                                             "format": "date-time"
@@ -15848,6 +15860,9 @@
                                                                                                               }
                                                                                                             }
                                                                                                           }
+                                                                                                        },
+                                                                                                        "blockId": {
+                                                                                                          "type": "integer"
                                                                                                         },
                                                                                                         "createdAt": {
                                                                                                           "type": "string",
@@ -20356,6 +20371,9 @@
                                                                                                 }
                                                                                               }
                                                                                             },
+                                                                                            "blockId": {
+                                                                                              "type": "integer"
+                                                                                            },
                                                                                             "createdAt": {
                                                                                               "type": "string",
                                                                                               "format": "date-time"
@@ -23071,6 +23089,9 @@
                                                                                                             }
                                                                                                           }
                                                                                                         }
+                                                                                                      },
+                                                                                                      "blockId": {
+                                                                                                        "type": "integer"
                                                                                                       },
                                                                                                       "createdAt": {
                                                                                                         "type": "string",
@@ -26349,6 +26370,9 @@
                                                                                                             }
                                                                                                           }
                                                                                                         }
+                                                                                                      },
+                                                                                                      "blockId": {
+                                                                                                        "type": "integer"
                                                                                                       },
                                                                                                       "createdAt": {
                                                                                                         "type": "string",
@@ -29782,6 +29806,9 @@
                                                                                                           }
                                                                                                         }
                                                                                                       },
+                                                                                                      "blockId": {
+                                                                                                        "type": "integer"
+                                                                                                      },
                                                                                                       "createdAt": {
                                                                                                         "type": "string",
                                                                                                         "format": "date-time"
@@ -33179,6 +33206,9 @@
                                                                                                               }
                                                                                                             }
                                                                                                           }
+                                                                                                        },
+                                                                                                        "blockId": {
+                                                                                                          "type": "integer"
                                                                                                         },
                                                                                                         "createdAt": {
                                                                                                           "type": "string",
@@ -36650,6 +36680,9 @@
                                                                                                             }
                                                                                                           }
                                                                                                         },
+                                                                                                        "blockId": {
+                                                                                                          "type": "integer"
+                                                                                                        },
                                                                                                         "createdAt": {
                                                                                                           "type": "string",
                                                                                                           "format": "date-time"
@@ -39007,6 +39040,9 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "blockId": {
+                "type": "integer"
               }
             }
           }
@@ -40175,6 +40211,9 @@
                                                                                                             }
                                                                                                           }
                                                                                                         }
+                                                                                                      },
+                                                                                                      "blockId": {
+                                                                                                        "type": "integer"
                                                                                                       },
                                                                                                       "createdAt": {
                                                                                                         "type": "string",
@@ -42287,6 +42326,9 @@
               }
             }
           },
+          "blockId": {
+            "type": "integer"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -43779,6 +43821,9 @@
                                                                                                               }
                                                                                                             }
                                                                                                           }
+                                                                                                        },
+                                                                                                        "blockId": {
+                                                                                                          "type": "integer"
                                                                                                         },
                                                                                                         "createdAt": {
                                                                                                           "type": "string",
@@ -47250,6 +47295,9 @@
                                                                                                             }
                                                                                                           }
                                                                                                         }
+                                                                                                      },
+                                                                                                      "blockId": {
+                                                                                                        "type": "integer"
                                                                                                       },
                                                                                                       "createdAt": {
                                                                                                         "type": "string",
@@ -50829,6 +50877,9 @@
                                                                                                               }
                                                                                                             }
                                                                                                           }
+                                                                                                        },
+                                                                                                        "blockId": {
+                                                                                                          "type": "integer"
                                                                                                         },
                                                                                                         "createdAt": {
                                                                                                           "type": "string",
@@ -54728,6 +54779,9 @@
                                                                                                               }
                                                                                                             }
                                                                                                           }
+                                                                                                        },
+                                                                                                        "blockId": {
+                                                                                                          "type": "integer"
                                                                                                         },
                                                                                                         "createdAt": {
                                                                                                           "type": "string",
