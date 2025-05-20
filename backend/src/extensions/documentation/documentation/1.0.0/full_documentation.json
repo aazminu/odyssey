@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-05-19T12:32:34.305Z"
+    "x-generation-date": "2025-05-20T13:27:20.469Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -2343,6 +2343,12 @@
                                                                       }
                                                                     }
                                                                   }
+                                                                },
+                                                                "inReview": {
+                                                                  "type": "boolean"
+                                                                },
+                                                                "afterReview": {
+                                                                  "type": "string"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -6799,6 +6805,12 @@
                           }
                         }
                       },
+                      "inReview": {
+                        "type": "boolean"
+                      },
+                      "afterReview": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -10390,6 +10402,12 @@
                               }
                             }
                           }
+                        },
+                        "inReview": {
+                          "type": "boolean"
+                        },
+                        "afterReview": {
+                          "type": "string"
                         },
                         "createdAt": {
                           "type": "string",
@@ -14019,6 +14037,12 @@
                                         }
                                       }
                                     },
+                                    "inReview": {
+                                      "type": "boolean"
+                                    },
+                                    "afterReview": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -17061,6 +17085,12 @@
                                                       }
                                                     }
                                                   },
+                                                  "inReview": {
+                                                    "type": "boolean"
+                                                  },
+                                                  "afterReview": {
+                                                    "type": "string"
+                                                  },
                                                   "createdAt": {
                                                     "type": "string",
                                                     "format": "date-time"
@@ -18210,6 +18240,12 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "inReview": {
+                "type": "boolean"
+              },
+              "afterReview": {
+                "type": "string"
               }
             }
           }
@@ -21331,6 +21367,12 @@
                                           }
                                         }
                                       },
+                                      "inReview": {
+                                        "type": "boolean"
+                                      },
+                                      "afterReview": {
+                                        "type": "string"
+                                      },
                                       "createdAt": {
                                         "type": "string",
                                         "format": "date-time"
@@ -21689,6 +21731,12 @@
                 }
               }
             }
+          },
+          "inReview": {
+            "type": "boolean"
+          },
+          "afterReview": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -25010,6 +25058,12 @@
                           }
                         }
                       },
+                      "inReview": {
+                        "type": "boolean"
+                      },
+                      "afterReview": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -27570,6 +27624,12 @@
                                                       }
                                                     }
                                                   }
+                                                },
+                                                "inReview": {
+                                                  "type": "boolean"
+                                                },
+                                                "afterReview": {
+                                                  "type": "string"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -31006,6 +31066,12 @@
                                                     }
                                                   }
                                                 },
+                                                "inReview": {
+                                                  "type": "boolean"
+                                                },
+                                                "afterReview": {
+                                                  "type": "string"
+                                                },
                                                 "createdAt": {
                                                   "type": "string",
                                                   "format": "date-time"
@@ -34406,6 +34472,12 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "inReview": {
+                                                    "type": "boolean"
+                                                  },
+                                                  "afterReview": {
+                                                    "type": "string"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -37879,6 +37951,12 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "inReview": {
+                                                    "type": "boolean"
+                                                  },
+                                                  "afterReview": {
+                                                    "type": "string"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -41411,6 +41489,12 @@
                                                       }
                                                     }
                                                   }
+                                                },
+                                                "inReview": {
+                                                  "type": "boolean"
+                                                },
+                                                "afterReview": {
+                                                  "type": "string"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -45742,6 +45826,12 @@
                             }
                           }
                         },
+                        "inReview": {
+                          "type": "boolean"
+                        },
+                        "afterReview": {
+                          "type": "string"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -49190,6 +49280,12 @@
                                           }
                                         }
                                       }
+                                    },
+                                    "inReview": {
+                                      "type": "boolean"
+                                    },
+                                    "afterReview": {
+                                      "type": "string"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -52797,6 +52893,12 @@
                               }
                             }
                           }
+                        },
+                        "inReview": {
+                          "type": "boolean"
+                        },
+                        "afterReview": {
+                          "type": "string"
                         },
                         "createdAt": {
                           "type": "string",
@@ -56699,6 +56801,12 @@
                               }
                             }
                           }
+                        },
+                        "inReview": {
+                          "type": "boolean"
+                        },
+                        "afterReview": {
+                          "type": "string"
                         },
                         "createdAt": {
                           "type": "string",
