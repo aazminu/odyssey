@@ -22,16 +22,16 @@ ChartJS.register(
   Legend,
 );
 
-interface DailyActiveUsersChartProps {
+interface NewUsersChartProps {
   data: { date: string; count: number }[];
 }
 
-export function DailyActiveUsersChart({ data }: DailyActiveUsersChartProps) {
+export function NewUsersChart({ data }: NewUsersChartProps) {
   const chartData = {
     labels: data.map((item) => new Date(item.date).toLocaleDateString()),
     datasets: [
       {
-        label: "Daily Active Users",
+        label: "Weekly New Users",
         data: data.map((item) => item.count),
         borderColor: "rgb(41, 116, 150)",
         tension: 0.1,
