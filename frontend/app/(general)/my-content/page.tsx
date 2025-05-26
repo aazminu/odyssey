@@ -40,7 +40,7 @@ export default async function CreateRoute() {
         </p>
       </div>
 
-      <div className="s mx-auto mb-8 w-full max-w-5xl px-4 xl:p-0">
+      <div className="s mx-auto mb-8 w-full max-w-7xl px-4 xl:p-0">
         <div className="flex w-full items-end justify-between">
           <h2 className="text-lg dark:text-slate-300">My Droplets</h2>
           <div className="flex items-center gap-2">
