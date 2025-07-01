@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-05-30T14:06:25.154Z"
+    "x-generation-date": "2025-06-26T17:20:58.982Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -2348,6 +2348,9 @@
                                                                   "type": "boolean"
                                                                 },
                                                                 "afterReview": {
+                                                                  "type": "string"
+                                                                },
+                                                                "funFact": {
                                                                   "type": "string"
                                                                 },
                                                                 "createdAt": {
@@ -6811,6 +6814,9 @@
                       "afterReview": {
                         "type": "string"
                       },
+                      "funFact": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -10407,6 +10413,9 @@
                           "type": "boolean"
                         },
                         "afterReview": {
+                          "type": "string"
+                        },
+                        "funFact": {
                           "type": "string"
                         },
                         "createdAt": {
@@ -14043,6 +14052,9 @@
                                     "afterReview": {
                                       "type": "string"
                                     },
+                                    "funFact": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -17091,6 +17103,9 @@
                                                   "afterReview": {
                                                     "type": "string"
                                                   },
+                                                  "funFact": {
+                                                    "type": "string"
+                                                  },
                                                   "createdAt": {
                                                     "type": "string",
                                                     "format": "date-time"
@@ -18245,6 +18260,9 @@
                 "type": "boolean"
               },
               "afterReview": {
+                "type": "string"
+              },
+              "funFact": {
                 "type": "string"
               }
             }
@@ -21373,6 +21391,9 @@
                                       "afterReview": {
                                         "type": "string"
                                       },
+                                      "funFact": {
+                                        "type": "string"
+                                      },
                                       "createdAt": {
                                         "type": "string",
                                         "format": "date-time"
@@ -21736,6 +21757,9 @@
             "type": "boolean"
           },
           "afterReview": {
+            "type": "string"
+          },
+          "funFact": {
             "type": "string"
           },
           "createdAt": {
@@ -25064,6 +25088,9 @@
                       "afterReview": {
                         "type": "string"
                       },
+                      "funFact": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -27629,6 +27656,9 @@
                                                   "type": "boolean"
                                                 },
                                                 "afterReview": {
+                                                  "type": "string"
+                                                },
+                                                "funFact": {
                                                   "type": "string"
                                                 },
                                                 "createdAt": {
@@ -31072,6 +31102,9 @@
                                                 "afterReview": {
                                                   "type": "string"
                                                 },
+                                                "funFact": {
+                                                  "type": "string"
+                                                },
                                                 "createdAt": {
                                                   "type": "string",
                                                   "format": "date-time"
@@ -34477,6 +34510,9 @@
                                                     "type": "boolean"
                                                   },
                                                   "afterReview": {
+                                                    "type": "string"
+                                                  },
+                                                  "funFact": {
                                                     "type": "string"
                                                   },
                                                   "createdAt": {
@@ -37956,6 +37992,9 @@
                                                     "type": "boolean"
                                                   },
                                                   "afterReview": {
+                                                    "type": "string"
+                                                  },
+                                                  "funFact": {
                                                     "type": "string"
                                                   },
                                                   "createdAt": {
@@ -41494,6 +41533,9 @@
                                                   "type": "boolean"
                                                 },
                                                 "afterReview": {
+                                                  "type": "string"
+                                                },
+                                                "funFact": {
                                                   "type": "string"
                                                 },
                                                 "createdAt": {
@@ -45832,6 +45874,9 @@
                         "afterReview": {
                           "type": "string"
                         },
+                        "funFact": {
+                          "type": "string"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -49285,6 +49330,9 @@
                                       "type": "boolean"
                                     },
                                     "afterReview": {
+                                      "type": "string"
+                                    },
+                                    "funFact": {
                                       "type": "string"
                                     },
                                     "createdAt": {
@@ -52898,6 +52946,9 @@
                           "type": "boolean"
                         },
                         "afterReview": {
+                          "type": "string"
+                        },
+                        "funFact": {
                           "type": "string"
                         },
                         "createdAt": {
@@ -56806,6 +56857,9 @@
                           "type": "boolean"
                         },
                         "afterReview": {
+                          "type": "string"
+                        },
+                        "funFact": {
                           "type": "string"
                         },
                         "createdAt": {
