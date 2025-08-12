@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-08-11T14:54:44.315Z"
+    "x-generation-date": "2025-08-12T15:41:36.833Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -2352,6 +2352,10 @@
                                                                 },
                                                                 "funFact": {
                                                                   "type": "string"
+                                                                },
+                                                                "averageRating": {
+                                                                  "type": "number",
+                                                                  "format": "float"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -6817,6 +6821,10 @@
                       "funFact": {
                         "type": "string"
                       },
+                      "averageRating": {
+                        "type": "number",
+                        "format": "float"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -10417,6 +10425,10 @@
                         },
                         "funFact": {
                           "type": "string"
+                        },
+                        "averageRating": {
+                          "type": "number",
+                          "format": "float"
                         },
                         "createdAt": {
                           "type": "string",
@@ -14055,6 +14067,10 @@
                                     "funFact": {
                                       "type": "string"
                                     },
+                                    "averageRating": {
+                                      "type": "number",
+                                      "format": "float"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -17106,6 +17122,10 @@
                                                   "funFact": {
                                                     "type": "string"
                                                   },
+                                                  "averageRating": {
+                                                    "type": "number",
+                                                    "format": "float"
+                                                  },
                                                   "createdAt": {
                                                     "type": "string",
                                                     "format": "date-time"
@@ -18264,6 +18284,10 @@
               },
               "funFact": {
                 "type": "string"
+              },
+              "averageRating": {
+                "type": "number",
+                "format": "float"
               }
             }
           }
@@ -21394,6 +21418,10 @@
                                       "funFact": {
                                         "type": "string"
                                       },
+                                      "averageRating": {
+                                        "type": "number",
+                                        "format": "float"
+                                      },
                                       "createdAt": {
                                         "type": "string",
                                         "format": "date-time"
@@ -21761,6 +21789,10 @@
           },
           "funFact": {
             "type": "string"
+          },
+          "averageRating": {
+            "type": "number",
+            "format": "float"
           },
           "createdAt": {
             "type": "string",
@@ -25091,6 +25123,10 @@
                       "funFact": {
                         "type": "string"
                       },
+                      "averageRating": {
+                        "type": "number",
+                        "format": "float"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -27660,6 +27696,10 @@
                                                 },
                                                 "funFact": {
                                                   "type": "string"
+                                                },
+                                                "averageRating": {
+                                                  "type": "number",
+                                                  "format": "float"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -31105,6 +31145,10 @@
                                                 "funFact": {
                                                   "type": "string"
                                                 },
+                                                "averageRating": {
+                                                  "type": "number",
+                                                  "format": "float"
+                                                },
                                                 "createdAt": {
                                                   "type": "string",
                                                   "format": "date-time"
@@ -34514,6 +34558,10 @@
                                                   },
                                                   "funFact": {
                                                     "type": "string"
+                                                  },
+                                                  "averageRating": {
+                                                    "type": "number",
+                                                    "format": "float"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -38424,6 +38472,10 @@
                                                   "funFact": {
                                                     "type": "string"
                                                   },
+                                                  "averageRating": {
+                                                    "type": "number",
+                                                    "format": "float"
+                                                  },
                                                   "createdAt": {
                                                     "type": "string",
                                                     "format": "date-time"
@@ -41964,6 +42016,10 @@
                                                 },
                                                 "funFact": {
                                                   "type": "string"
+                                                },
+                                                "averageRating": {
+                                                  "type": "number",
+                                                  "format": "float"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -46304,6 +46360,10 @@
                         "funFact": {
                           "type": "string"
                         },
+                        "averageRating": {
+                          "type": "number",
+                          "format": "float"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -49761,6 +49821,10 @@
                                     },
                                     "funFact": {
                                       "type": "string"
+                                    },
+                                    "averageRating": {
+                                      "type": "number",
+                                      "format": "float"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -53377,6 +53441,10 @@
                         },
                         "funFact": {
                           "type": "string"
+                        },
+                        "averageRating": {
+                          "type": "number",
+                          "format": "float"
                         },
                         "createdAt": {
                           "type": "string",
@@ -57288,6 +57356,10 @@
                         },
                         "funFact": {
                           "type": "string"
+                        },
+                        "averageRating": {
+                          "type": "number",
+                          "format": "float"
                         },
                         "createdAt": {
                           "type": "string",
