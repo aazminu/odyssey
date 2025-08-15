@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-08-13T19:04:54.285Z"
+    "x-generation-date": "2025-08-15T19:48:11.601Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -1480,6 +1480,10 @@
                                                                                               }
                                                                                             },
                                                                                             "dueDate": {
+                                                                                              "type": "string",
+                                                                                              "format": "date-time"
+                                                                                            },
+                                                                                            "completionDate": {
                                                                                               "type": "string",
                                                                                               "format": "date-time"
                                                                                             },
@@ -5101,6 +5105,10 @@
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
+                                                              "completionDate": {
+                                                                "type": "string",
+                                                                "format": "date-time"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -8703,6 +8711,10 @@
                                                                   }
                                                                 },
                                                                 "dueDate": {
+                                                                  "type": "string",
+                                                                  "format": "date-time"
+                                                                },
+                                                                "completionDate": {
                                                                   "type": "string",
                                                                   "format": "date-time"
                                                                 },
@@ -13530,6 +13542,10 @@
                                                                   "type": "string",
                                                                   "format": "date-time"
                                                                 },
+                                                                "completionDate": {
+                                                                  "type": "string",
+                                                                  "format": "date-time"
+                                                                },
                                                                 "createdAt": {
                                                                   "type": "string",
                                                                   "format": "date-time"
@@ -16014,6 +16030,10 @@
                                                                                 }
                                                                               },
                                                                               "dueDate": {
+                                                                                "type": "string",
+                                                                                "format": "date-time"
+                                                                              },
+                                                                              "completionDate": {
                                                                                 "type": "string",
                                                                                 "format": "date-time"
                                                                               },
@@ -20881,6 +20901,10 @@
                                                                     "type": "string",
                                                                     "format": "date-time"
                                                                   },
+                                                                  "completionDate": {
+                                                                    "type": "string",
+                                                                    "format": "date-time"
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -23400,6 +23424,10 @@
                                                                 }
                                                               },
                                                               "dueDate": {
+                                                                "type": "string",
+                                                                "format": "date-time"
+                                                              },
+                                                              "completionDate": {
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
@@ -26592,6 +26620,10 @@
                                                                               "type": "string",
                                                                               "format": "date-time"
                                                                             },
+                                                                            "completionDate": {
+                                                                              "type": "string",
+                                                                              "format": "date-time"
+                                                                            },
                                                                             "createdAt": {
                                                                               "type": "string",
                                                                               "format": "date-time"
@@ -28770,6 +28802,10 @@
               "dueDate": {
                 "type": "string",
                 "format": "date-time"
+              },
+              "completionDate": {
+                "type": "string",
+                "format": "date-time"
               }
             }
           }
@@ -30037,6 +30073,10 @@
                                                                               }
                                                                             },
                                                                             "dueDate": {
+                                                                              "type": "string",
+                                                                              "format": "date-time"
+                                                                            },
+                                                                            "completionDate": {
                                                                               "type": "string",
                                                                               "format": "date-time"
                                                                             },
@@ -32097,6 +32137,10 @@
             "type": "string",
             "format": "date-time"
           },
+          "completionDate": {
+            "type": "string",
+            "format": "date-time"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -33451,6 +33495,10 @@
                                                                                 }
                                                                               },
                                                                               "dueDate": {
+                                                                                "type": "string",
+                                                                                "format": "date-time"
+                                                                              },
+                                                                              "completionDate": {
                                                                                 "type": "string",
                                                                                 "format": "date-time"
                                                                               },
@@ -37367,6 +37415,10 @@
                                                                                 "type": "string",
                                                                                 "format": "date-time"
                                                                               },
+                                                                              "completionDate": {
+                                                                                "type": "string",
+                                                                                "format": "date-time"
+                                                                              },
                                                                               "createdAt": {
                                                                                 "type": "string",
                                                                                 "format": "date-time"
@@ -40909,6 +40961,10 @@
                                                                               }
                                                                             },
                                                                             "dueDate": {
+                                                                              "type": "string",
+                                                                              "format": "date-time"
+                                                                            },
+                                                                            "completionDate": {
                                                                               "type": "string",
                                                                               "format": "date-time"
                                                                             },
@@ -44640,6 +44696,10 @@
                                                                   "type": "string",
                                                                   "format": "date-time"
                                                                 },
+                                                                "completionDate": {
+                                                                  "type": "string",
+                                                                  "format": "date-time"
+                                                                },
                                                                 "createdAt": {
                                                                   "type": "string",
                                                                   "format": "date-time"
@@ -48019,6 +48079,10 @@
                                                                               }
                                                                             },
                                                                             "dueDate": {
+                                                                              "type": "string",
+                                                                              "format": "date-time"
+                                                                            },
+                                                                            "completionDate": {
                                                                               "type": "string",
                                                                               "format": "date-time"
                                                                             },
@@ -51719,6 +51783,10 @@
                                                                   }
                                                                 },
                                                                 "dueDate": {
+                                                                  "type": "string",
+                                                                  "format": "date-time"
+                                                                },
+                                                                "completionDate": {
                                                                   "type": "string",
                                                                   "format": "date-time"
                                                                 },
@@ -55634,6 +55702,10 @@
                                                                   }
                                                                 },
                                                                 "dueDate": {
+                                                                  "type": "string",
+                                                                  "format": "date-time"
+                                                                },
+                                                                "completionDate": {
                                                                   "type": "string",
                                                                   "format": "date-time"
                                                                 },
