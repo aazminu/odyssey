@@ -11,12 +11,10 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-09-30T14:27:32.403Z"
+    "x-generation-date": "2025-10-02T13:40:41.109Z"
   },
   "x-strapi-config": {
-    "plugins": [
-      "upload"
-    ],
+    "plugins": ["upload"],
     "path": "/documentation"
   },
   "servers": [
@@ -49,9 +47,7 @@
     "schemas": {
       "Error": {
         "type": "object",
-        "required": [
-          "error"
-        ],
+        "required": ["error"],
         "properties": {
           "data": {
             "nullable": true,
@@ -88,9 +84,7 @@
       },
       "AccessRequestRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
             "required": [
@@ -554,16 +548,10 @@
       },
       "AnnouncementRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
-            "required": [
-              "type",
-              "firstCreated",
-              "content"
-            ],
+            "required": ["type", "firstCreated", "content"],
             "type": "object",
             "properties": {
               "type": {
@@ -694,11 +682,7 @@
       },
       "Announcement": {
         "type": "object",
-        "required": [
-          "type",
-          "firstCreated",
-          "content"
-        ],
+        "required": ["type", "firstCreated", "content"],
         "properties": {
           "type": {
             "type": "string",
@@ -735,10 +719,7 @@
                       },
                       "type": {
                         "type": "string",
-                        "enum": [
-                          "knowledge",
-                          "skill"
-                        ]
+                        "enum": ["knowledge", "skill"]
                       },
                       "authors": {
                         "type": "object",
@@ -3551,11 +3532,7 @@
                       },
                       "focusArea": {
                         "type": "string",
-                        "enum": [
-                          "personal",
-                          "professional",
-                          "technical"
-                        ]
+                        "enum": ["personal", "professional", "technical"]
                       },
                       "lessons": {
                         "type": "object",
@@ -3768,11 +3745,7 @@
                       },
                       "status": {
                         "type": "string",
-                        "enum": [
-                          "draft",
-                          "edit",
-                          "published"
-                        ]
+                        "enum": ["draft", "edit", "published"]
                       },
                       "groups": {
                         "type": "object",
@@ -4058,14 +4031,10 @@
       },
       "AuthorRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
-            "required": [
-              "name"
-            ],
+            "required": ["name"],
             "type": "object",
             "properties": {
               "name": {
@@ -4176,9 +4145,7 @@
       },
       "Author": {
         "type": "object",
-        "required": [
-          "name"
-        ],
+        "required": ["name"],
         "properties": {
           "name": {
             "type": "string"
@@ -4827,10 +4794,7 @@
                         },
                         "type": {
                           "type": "string",
-                          "enum": [
-                            "knowledge",
-                            "skill"
-                          ]
+                          "enum": ["knowledge", "skill"]
                         },
                         "authors": {
                           "type": "object",
@@ -7160,11 +7124,7 @@
                         },
                         "focusArea": {
                           "type": "string",
-                          "enum": [
-                            "personal",
-                            "professional",
-                            "technical"
-                          ]
+                          "enum": ["personal", "professional", "technical"]
                         },
                         "lessons": {
                           "type": "object",
@@ -7377,11 +7337,7 @@
                         },
                         "status": {
                           "type": "string",
-                          "enum": [
-                            "draft",
-                            "edit",
-                            "published"
-                          ]
+                          "enum": ["draft", "edit", "published"]
                         },
                         "groups": {
                           "type": "object",
@@ -7634,15 +7590,10 @@
       },
       "AuthorizedUserRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
-            "required": [
-              "email",
-              "isEnabled"
-            ],
+            "required": ["email", "isEnabled"],
             "type": "object",
             "properties": {
               "email": {
@@ -8046,10 +7997,7 @@
       },
       "AuthorizedUser": {
         "type": "object",
-        "required": [
-          "email",
-          "isEnabled"
-        ],
+        "required": ["email", "isEnabled"],
         "properties": {
           "email": {
             "type": "string",
@@ -11772,9 +11720,7 @@
       },
       "AuthorizedUserRoleRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
             "type": "object",
@@ -15124,9 +15070,7 @@
       },
       "DropletRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
             "required": [
@@ -15145,10 +15089,7 @@
               },
               "type": {
                 "type": "string",
-                "enum": [
-                  "knowledge",
-                  "skill"
-                ]
+                "enum": ["knowledge", "skill"]
               },
               "authors": {
                 "type": "array",
@@ -15169,11 +15110,7 @@
               },
               "focusArea": {
                 "type": "string",
-                "enum": [
-                  "personal",
-                  "professional",
-                  "technical"
-                ]
+                "enum": ["personal", "professional", "technical"]
               },
               "lessons": {
                 "type": "array",
@@ -15268,11 +15205,7 @@
               },
               "status": {
                 "type": "string",
-                "enum": [
-                  "draft",
-                  "edit",
-                  "published"
-                ]
+                "enum": ["draft", "edit", "published"]
               },
               "groups": {
                 "type": "array",
@@ -15410,10 +15343,7 @@
           },
           "type": {
             "type": "string",
-            "enum": [
-              "knowledge",
-              "skill"
-            ]
+            "enum": ["knowledge", "skill"]
           },
           "authors": {
             "type": "object",
@@ -16076,10 +16006,7 @@
                                       },
                                       "type": {
                                         "type": "string",
-                                        "enum": [
-                                          "knowledge",
-                                          "skill"
-                                        ]
+                                        "enum": ["knowledge", "skill"]
                                       },
                                       "authors": {
                                         "type": "object",
@@ -18381,11 +18308,7 @@
                                       },
                                       "status": {
                                         "type": "string",
-                                        "enum": [
-                                          "draft",
-                                          "edit",
-                                          "published"
-                                        ]
+                                        "enum": ["draft", "edit", "published"]
                                       },
                                       "groups": {
                                         "type": "object",
@@ -18624,11 +18547,7 @@
           },
           "focusArea": {
             "type": "string",
-            "enum": [
-              "personal",
-              "professional",
-              "technical"
-            ]
+            "enum": ["personal", "professional", "technical"]
           },
           "lessons": {
             "type": "object",
@@ -18753,11 +18672,7 @@
           },
           "status": {
             "type": "string",
-            "enum": [
-              "draft",
-              "edit",
-              "published"
-            ]
+            "enum": ["draft", "edit", "published"]
           },
           "groups": {
             "type": "object",
@@ -18949,14 +18864,10 @@
       },
       "DropletLessonRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
-            "required": [
-              "orderIndex"
-            ],
+            "required": ["orderIndex"],
             "type": "object",
             "properties": {
               "droplet": {
@@ -19036,9 +18947,7 @@
       },
       "DropletLesson": {
         "type": "object",
-        "required": [
-          "orderIndex"
-        ],
+        "required": ["orderIndex"],
         "properties": {
           "droplet": {
             "type": "object",
@@ -19057,10 +18966,7 @@
                       },
                       "type": {
                         "type": "string",
-                        "enum": [
-                          "knowledge",
-                          "skill"
-                        ]
+                        "enum": ["knowledge", "skill"]
                       },
                       "authors": {
                         "type": "object",
@@ -21873,11 +21779,7 @@
                       },
                       "focusArea": {
                         "type": "string",
-                        "enum": [
-                          "personal",
-                          "professional",
-                          "technical"
-                        ]
+                        "enum": ["personal", "professional", "technical"]
                       },
                       "lessons": {
                         "type": "object",
@@ -22090,11 +21992,7 @@
                       },
                       "status": {
                         "type": "string",
-                        "enum": [
-                          "draft",
-                          "edit",
-                          "published"
-                        ]
+                        "enum": ["draft", "edit", "published"]
                       },
                       "groups": {
                         "type": "object",
@@ -22329,9 +22227,7 @@
       },
       "DueDateRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
             "type": "object",
@@ -22508,10 +22404,7 @@
                                                 },
                                                 "type": {
                                                   "type": "string",
-                                                  "enum": [
-                                                    "knowledge",
-                                                    "skill"
-                                                  ]
+                                                  "enum": ["knowledge", "skill"]
                                                 },
                                                 "authors": {
                                                   "type": "object",
@@ -25761,14 +25654,10 @@
       },
       "EnrollmentRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
-            "required": [
-              "isComplete"
-            ],
+            "required": ["isComplete"],
             "type": "object",
             "properties": {
               "authorizedUser": {
@@ -25893,9 +25782,7 @@
       },
       "Enrollment": {
         "type": "object",
-        "required": [
-          "isComplete"
-        ],
+        "required": ["isComplete"],
         "properties": {
           "authorizedUser": {
             "type": "object",
@@ -25964,10 +25851,7 @@
                                                 },
                                                 "type": {
                                                   "type": "string",
-                                                  "enum": [
-                                                    "knowledge",
-                                                    "skill"
-                                                  ]
+                                                  "enum": ["knowledge", "skill"]
                                                 },
                                                 "authors": {
                                                   "type": "object",
@@ -29243,9 +29127,7 @@
       },
       "FriendshipRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
             "type": "object",
@@ -32589,16 +32471,10 @@
       },
       "GalleryRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
-            "required": [
-              "title",
-              "slug",
-              "subtitle"
-            ],
+            "required": ["title", "slug", "subtitle"],
             "type": "object",
             "properties": {
               "title": {
@@ -32668,11 +32544,7 @@
       },
       "Gallery": {
         "type": "object",
-        "required": [
-          "title",
-          "slug",
-          "subtitle"
-        ],
+        "required": ["title", "slug", "subtitle"],
         "properties": {
           "title": {
             "type": "string"
@@ -33024,15 +32896,10 @@
       },
       "GroupRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
-            "required": [
-              "groupName",
-              "slug"
-            ],
+            "required": ["groupName", "slug"],
             "type": "object",
             "properties": {
               "groupName": {
@@ -33231,10 +33098,7 @@
       },
       "Group": {
         "type": "object",
-        "required": [
-          "groupName",
-          "slug"
-        ],
+        "required": ["groupName", "slug"],
         "properties": {
           "groupName": {
             "type": "string"
@@ -36680,9 +36544,7 @@
       },
       "HighlightRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
             "type": "object",
@@ -36860,10 +36722,7 @@
                                                 },
                                                 "type": {
                                                   "type": "string",
-                                                  "enum": [
-                                                    "knowledge",
-                                                    "skill"
-                                                  ]
+                                                  "enum": ["knowledge", "skill"]
                                                 },
                                                 "authors": {
                                                   "type": "object",
@@ -40104,16 +39963,10 @@
       },
       "LessonRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
-            "required": [
-              "name",
-              "slug",
-              "blocks"
-            ],
+            "required": ["name", "slug", "blocks"],
             "type": "object",
             "properties": {
               "name": {
@@ -40177,12 +40030,7 @@
               },
               "type": {
                 "type": "string",
-                "enum": [
-                  "general",
-                  "setup",
-                  "activity",
-                  "caseStudy"
-                ]
+                "enum": ["general", "setup", "activity", "caseStudy"]
               },
               "droplet_lessons": {
                 "type": "array",
@@ -40278,11 +40126,7 @@
       },
       "Lesson": {
         "type": "object",
-        "required": [
-          "name",
-          "slug",
-          "blocks"
-        ],
+        "required": ["name", "slug", "blocks"],
         "properties": {
           "name": {
             "type": "string"
@@ -40334,10 +40178,7 @@
                         },
                         "type": {
                           "type": "string",
-                          "enum": [
-                            "knowledge",
-                            "skill"
-                          ]
+                          "enum": ["knowledge", "skill"]
                         },
                         "authors": {
                           "type": "object",
@@ -43150,11 +42991,7 @@
                         },
                         "focusArea": {
                           "type": "string",
-                          "enum": [
-                            "personal",
-                            "professional",
-                            "technical"
-                          ]
+                          "enum": ["personal", "professional", "technical"]
                         },
                         "lessons": {
                           "type": "object",
@@ -43367,11 +43204,7 @@
                         },
                         "status": {
                           "type": "string",
-                          "enum": [
-                            "draft",
-                            "edit",
-                            "published"
-                          ]
+                          "enum": ["draft", "edit", "published"]
                         },
                         "groups": {
                           "type": "object",
@@ -43541,12 +43374,7 @@
           },
           "type": {
             "type": "string",
-            "enum": [
-              "general",
-              "setup",
-              "activity",
-              "caseStudy"
-            ]
+            "enum": ["general", "setup", "activity", "caseStudy"]
           },
           "droplet_lessons": {
             "type": "object",
@@ -43763,10 +43591,7 @@
           "content": {},
           "type": {
             "type": "string",
-            "enum": [
-              "info",
-              "warning"
-            ]
+            "enum": ["info", "warning"]
           },
           "color": {
             "type": "string"
@@ -43826,9 +43651,7 @@
       },
       "NoteRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
             "type": "object",
@@ -44029,10 +43852,7 @@
                                 "content": {},
                                 "type": {
                                   "type": "string",
-                                  "enum": [
-                                    "info",
-                                    "warning"
-                                  ]
+                                  "enum": ["info", "warning"]
                                 },
                                 "color": {
                                   "type": "string"
@@ -44109,10 +43929,7 @@
                                     },
                                     "type": {
                                       "type": "string",
-                                      "enum": [
-                                        "knowledge",
-                                        "skill"
-                                      ]
+                                      "enum": ["knowledge", "skill"]
                                     },
                                     "authors": {
                                       "type": "object",
@@ -46753,11 +46570,7 @@
                                     },
                                     "status": {
                                       "type": "string",
-                                      "enum": [
-                                        "draft",
-                                        "edit",
-                                        "published"
-                                      ]
+                                      "enum": ["draft", "edit", "published"]
                                     },
                                     "groups": {
                                       "type": "object",
@@ -47007,12 +46820,7 @@
                       },
                       "type": {
                         "type": "string",
-                        "enum": [
-                          "general",
-                          "setup",
-                          "activity",
-                          "caseStudy"
-                        ]
+                        "enum": ["general", "setup", "activity", "caseStudy"]
                       },
                       "droplet_lessons": {
                         "type": "object",
@@ -47234,16 +47042,10 @@
       },
       "PlaylistRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
-            "required": [
-              "name",
-              "slug",
-              "duration"
-            ],
+            "required": ["name", "slug", "duration"],
             "type": "object",
             "properties": {
               "droplets": {
@@ -47274,11 +47076,7 @@
               },
               "duration": {
                 "type": "string",
-                "enum": [
-                  "short",
-                  "medium",
-                  "long"
-                ]
+                "enum": ["short", "medium", "long"]
               },
               "author": {
                 "oneOf": [
@@ -47399,11 +47197,7 @@
       },
       "Playlist": {
         "type": "object",
-        "required": [
-          "name",
-          "slug",
-          "duration"
-        ],
+        "required": ["name", "slug", "duration"],
         "properties": {
           "droplets": {
             "type": "object",
@@ -47424,10 +47218,7 @@
                         },
                         "type": {
                           "type": "string",
-                          "enum": [
-                            "knowledge",
-                            "skill"
-                          ]
+                          "enum": ["knowledge", "skill"]
                         },
                         "authors": {
                           "type": "object",
@@ -50240,11 +50031,7 @@
                         },
                         "focusArea": {
                           "type": "string",
-                          "enum": [
-                            "personal",
-                            "professional",
-                            "technical"
-                          ]
+                          "enum": ["personal", "professional", "technical"]
                         },
                         "lessons": {
                           "type": "object",
@@ -50457,11 +50244,7 @@
                         },
                         "status": {
                           "type": "string",
-                          "enum": [
-                            "draft",
-                            "edit",
-                            "published"
-                          ]
+                          "enum": ["draft", "edit", "published"]
                         },
                         "groups": {
                           "type": "object",
@@ -50623,11 +50406,7 @@
           },
           "duration": {
             "type": "string",
-            "enum": [
-              "short",
-              "medium",
-              "long"
-            ]
+            "enum": ["short", "medium", "long"]
           },
           "author": {
             "type": "object",
@@ -50798,18 +50577,10 @@
       },
       "ReportRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
-            "required": [
-              "fullName",
-              "email",
-              "path",
-              "description",
-              "type"
-            ],
+            "required": ["fullName", "email", "path", "description", "type"],
             "type": "object",
             "properties": {
               "fullName": {
@@ -50827,9 +50598,7 @@
               },
               "type": {
                 "type": "string",
-                "enum": [
-                  "bug"
-                ]
+                "enum": ["bug"]
               }
             }
           }
@@ -50883,13 +50652,7 @@
       },
       "Report": {
         "type": "object",
-        "required": [
-          "fullName",
-          "email",
-          "path",
-          "description",
-          "type"
-        ],
+        "required": ["fullName", "email", "path", "description", "type"],
         "properties": {
           "fullName": {
             "type": "string"
@@ -50906,9 +50669,7 @@
           },
           "type": {
             "type": "string",
-            "enum": [
-              "bug"
-            ]
+            "enum": ["bug"]
           },
           "createdAt": {
             "type": "string",
@@ -51230,15 +50991,10 @@
       },
       "TagRequest": {
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
-            "required": [
-              "name",
-              "slug"
-            ],
+            "required": ["name", "slug"],
             "type": "object",
             "properties": {
               "name": {
@@ -51313,10 +51069,7 @@
       },
       "Tag": {
         "type": "object",
-        "required": [
-          "name",
-          "slug"
-        ],
+        "required": ["name", "slug"],
         "properties": {
           "name": {
             "type": "string"
@@ -51343,10 +51096,7 @@
                         },
                         "type": {
                           "type": "string",
-                          "enum": [
-                            "knowledge",
-                            "skill"
-                          ]
+                          "enum": ["knowledge", "skill"]
                         },
                         "authors": {
                           "type": "object",
@@ -54159,11 +53909,7 @@
                         },
                         "focusArea": {
                           "type": "string",
-                          "enum": [
-                            "personal",
-                            "professional",
-                            "technical"
-                          ]
+                          "enum": ["personal", "professional", "technical"]
                         },
                         "lessons": {
                           "type": "object",
@@ -54376,11 +54122,7 @@
                         },
                         "status": {
                           "type": "string",
-                          "enum": [
-                            "draft",
-                            "edit",
-                            "published"
-                          ]
+                          "enum": ["draft", "edit", "published"]
                         },
                         "groups": {
                           "type": "object",
@@ -54721,9 +54463,7 @@
             }
           }
         },
-        "tags": [
-          "Access-request"
-        ],
+        "tags": ["Access-request"],
         "parameters": [
           {
             "name": "sort",
@@ -54893,9 +54633,7 @@
             }
           }
         },
-        "tags": [
-          "Access-request"
-        ],
+        "tags": ["Access-request"],
         "parameters": [],
         "operationId": "post/access-requests",
         "requestBody": {
@@ -54974,9 +54712,7 @@
             }
           }
         },
-        "tags": [
-          "Access-request"
-        ],
+        "tags": ["Access-request"],
         "parameters": [
           {
             "name": "id",
@@ -55054,9 +54790,7 @@
             }
           }
         },
-        "tags": [
-          "Access-request"
-        ],
+        "tags": ["Access-request"],
         "parameters": [
           {
             "name": "id",
@@ -55145,9 +54879,7 @@
             }
           }
         },
-        "tags": [
-          "Access-request"
-        ],
+        "tags": ["Access-request"],
         "parameters": [
           {
             "name": "id",
@@ -55227,9 +54959,7 @@
             }
           }
         },
-        "tags": [
-          "Announcement"
-        ],
+        "tags": ["Announcement"],
         "parameters": [
           {
             "name": "sort",
@@ -55399,9 +55129,7 @@
             }
           }
         },
-        "tags": [
-          "Announcement"
-        ],
+        "tags": ["Announcement"],
         "parameters": [],
         "operationId": "post/announcements",
         "requestBody": {
@@ -55480,9 +55208,7 @@
             }
           }
         },
-        "tags": [
-          "Announcement"
-        ],
+        "tags": ["Announcement"],
         "parameters": [
           {
             "name": "id",
@@ -55560,9 +55286,7 @@
             }
           }
         },
-        "tags": [
-          "Announcement"
-        ],
+        "tags": ["Announcement"],
         "parameters": [
           {
             "name": "id",
@@ -55651,9 +55375,7 @@
             }
           }
         },
-        "tags": [
-          "Announcement"
-        ],
+        "tags": ["Announcement"],
         "parameters": [
           {
             "name": "id",
@@ -55733,9 +55455,7 @@
             }
           }
         },
-        "tags": [
-          "Author"
-        ],
+        "tags": ["Author"],
         "parameters": [
           {
             "name": "sort",
@@ -55905,9 +55625,7 @@
             }
           }
         },
-        "tags": [
-          "Author"
-        ],
+        "tags": ["Author"],
         "parameters": [],
         "operationId": "post/authors",
         "requestBody": {
@@ -55986,9 +55704,7 @@
             }
           }
         },
-        "tags": [
-          "Author"
-        ],
+        "tags": ["Author"],
         "parameters": [
           {
             "name": "id",
@@ -56066,9 +55782,7 @@
             }
           }
         },
-        "tags": [
-          "Author"
-        ],
+        "tags": ["Author"],
         "parameters": [
           {
             "name": "id",
@@ -56157,9 +55871,7 @@
             }
           }
         },
-        "tags": [
-          "Author"
-        ],
+        "tags": ["Author"],
         "parameters": [
           {
             "name": "id",
@@ -56239,9 +55951,7 @@
             }
           }
         },
-        "tags": [
-          "Authorized-user"
-        ],
+        "tags": ["Authorized-user"],
         "parameters": [
           {
             "name": "sort",
@@ -56411,9 +56121,7 @@
             }
           }
         },
-        "tags": [
-          "Authorized-user"
-        ],
+        "tags": ["Authorized-user"],
         "parameters": [],
         "operationId": "post/authorized-users",
         "requestBody": {
@@ -56492,9 +56200,7 @@
             }
           }
         },
-        "tags": [
-          "Authorized-user"
-        ],
+        "tags": ["Authorized-user"],
         "parameters": [
           {
             "name": "id",
@@ -56572,9 +56278,7 @@
             }
           }
         },
-        "tags": [
-          "Authorized-user"
-        ],
+        "tags": ["Authorized-user"],
         "parameters": [
           {
             "name": "id",
@@ -56663,9 +56367,7 @@
             }
           }
         },
-        "tags": [
-          "Authorized-user"
-        ],
+        "tags": ["Authorized-user"],
         "parameters": [
           {
             "name": "id",
@@ -56745,9 +56447,7 @@
             }
           }
         },
-        "tags": [
-          "Authorized-user-role"
-        ],
+        "tags": ["Authorized-user-role"],
         "parameters": [
           {
             "name": "sort",
@@ -56917,9 +56617,7 @@
             }
           }
         },
-        "tags": [
-          "Authorized-user-role"
-        ],
+        "tags": ["Authorized-user-role"],
         "parameters": [],
         "operationId": "post/authorized-user-roles",
         "requestBody": {
@@ -56998,9 +56696,7 @@
             }
           }
         },
-        "tags": [
-          "Authorized-user-role"
-        ],
+        "tags": ["Authorized-user-role"],
         "parameters": [
           {
             "name": "id",
@@ -57078,9 +56774,7 @@
             }
           }
         },
-        "tags": [
-          "Authorized-user-role"
-        ],
+        "tags": ["Authorized-user-role"],
         "parameters": [
           {
             "name": "id",
@@ -57169,9 +56863,7 @@
             }
           }
         },
-        "tags": [
-          "Authorized-user-role"
-        ],
+        "tags": ["Authorized-user-role"],
         "parameters": [
           {
             "name": "id",
@@ -57251,9 +56943,7 @@
             }
           }
         },
-        "tags": [
-          "Droplet"
-        ],
+        "tags": ["Droplet"],
         "parameters": [
           {
             "name": "sort",
@@ -57423,9 +57113,7 @@
             }
           }
         },
-        "tags": [
-          "Droplet"
-        ],
+        "tags": ["Droplet"],
         "parameters": [],
         "operationId": "post/droplets",
         "requestBody": {
@@ -57504,9 +57192,7 @@
             }
           }
         },
-        "tags": [
-          "Droplet"
-        ],
+        "tags": ["Droplet"],
         "parameters": [
           {
             "name": "id",
@@ -57584,9 +57270,7 @@
             }
           }
         },
-        "tags": [
-          "Droplet"
-        ],
+        "tags": ["Droplet"],
         "parameters": [
           {
             "name": "id",
@@ -57675,9 +57359,7 @@
             }
           }
         },
-        "tags": [
-          "Droplet"
-        ],
+        "tags": ["Droplet"],
         "parameters": [
           {
             "name": "id",
@@ -57757,9 +57439,7 @@
             }
           }
         },
-        "tags": [
-          "Droplet-lesson"
-        ],
+        "tags": ["Droplet-lesson"],
         "parameters": [
           {
             "name": "sort",
@@ -57929,9 +57609,7 @@
             }
           }
         },
-        "tags": [
-          "Droplet-lesson"
-        ],
+        "tags": ["Droplet-lesson"],
         "parameters": [],
         "operationId": "post/droplet-lessons",
         "requestBody": {
@@ -58010,9 +57688,7 @@
             }
           }
         },
-        "tags": [
-          "Droplet-lesson"
-        ],
+        "tags": ["Droplet-lesson"],
         "parameters": [
           {
             "name": "id",
@@ -58090,9 +57766,7 @@
             }
           }
         },
-        "tags": [
-          "Droplet-lesson"
-        ],
+        "tags": ["Droplet-lesson"],
         "parameters": [
           {
             "name": "id",
@@ -58181,9 +57855,7 @@
             }
           }
         },
-        "tags": [
-          "Droplet-lesson"
-        ],
+        "tags": ["Droplet-lesson"],
         "parameters": [
           {
             "name": "id",
@@ -58263,9 +57935,7 @@
             }
           }
         },
-        "tags": [
-          "Due-date"
-        ],
+        "tags": ["Due-date"],
         "parameters": [
           {
             "name": "sort",
@@ -58435,9 +58105,7 @@
             }
           }
         },
-        "tags": [
-          "Due-date"
-        ],
+        "tags": ["Due-date"],
         "parameters": [],
         "operationId": "post/due-dates",
         "requestBody": {
@@ -58516,9 +58184,7 @@
             }
           }
         },
-        "tags": [
-          "Due-date"
-        ],
+        "tags": ["Due-date"],
         "parameters": [
           {
             "name": "id",
@@ -58596,9 +58262,7 @@
             }
           }
         },
-        "tags": [
-          "Due-date"
-        ],
+        "tags": ["Due-date"],
         "parameters": [
           {
             "name": "id",
@@ -58687,9 +58351,7 @@
             }
           }
         },
-        "tags": [
-          "Due-date"
-        ],
+        "tags": ["Due-date"],
         "parameters": [
           {
             "name": "id",
@@ -58769,9 +58431,7 @@
             }
           }
         },
-        "tags": [
-          "Enrollment"
-        ],
+        "tags": ["Enrollment"],
         "parameters": [
           {
             "name": "sort",
@@ -58941,9 +58601,7 @@
             }
           }
         },
-        "tags": [
-          "Enrollment"
-        ],
+        "tags": ["Enrollment"],
         "parameters": [],
         "operationId": "post/enrollments",
         "requestBody": {
@@ -59022,9 +58680,7 @@
             }
           }
         },
-        "tags": [
-          "Enrollment"
-        ],
+        "tags": ["Enrollment"],
         "parameters": [
           {
             "name": "id",
@@ -59102,9 +58758,7 @@
             }
           }
         },
-        "tags": [
-          "Enrollment"
-        ],
+        "tags": ["Enrollment"],
         "parameters": [
           {
             "name": "id",
@@ -59193,9 +58847,7 @@
             }
           }
         },
-        "tags": [
-          "Enrollment"
-        ],
+        "tags": ["Enrollment"],
         "parameters": [
           {
             "name": "id",
@@ -59275,9 +58927,7 @@
             }
           }
         },
-        "tags": [
-          "Friendship"
-        ],
+        "tags": ["Friendship"],
         "parameters": [
           {
             "name": "sort",
@@ -59447,9 +59097,7 @@
             }
           }
         },
-        "tags": [
-          "Friendship"
-        ],
+        "tags": ["Friendship"],
         "parameters": [],
         "operationId": "post/friendships",
         "requestBody": {
@@ -59528,9 +59176,7 @@
             }
           }
         },
-        "tags": [
-          "Friendship"
-        ],
+        "tags": ["Friendship"],
         "parameters": [
           {
             "name": "id",
@@ -59608,9 +59254,7 @@
             }
           }
         },
-        "tags": [
-          "Friendship"
-        ],
+        "tags": ["Friendship"],
         "parameters": [
           {
             "name": "id",
@@ -59699,9 +59343,7 @@
             }
           }
         },
-        "tags": [
-          "Friendship"
-        ],
+        "tags": ["Friendship"],
         "parameters": [
           {
             "name": "id",
@@ -59781,9 +59423,7 @@
             }
           }
         },
-        "tags": [
-          "Gallery"
-        ],
+        "tags": ["Gallery"],
         "parameters": [
           {
             "name": "sort",
@@ -59953,9 +59593,7 @@
             }
           }
         },
-        "tags": [
-          "Gallery"
-        ],
+        "tags": ["Gallery"],
         "parameters": [],
         "operationId": "post/galleries",
         "requestBody": {
@@ -60034,9 +59672,7 @@
             }
           }
         },
-        "tags": [
-          "Gallery"
-        ],
+        "tags": ["Gallery"],
         "parameters": [
           {
             "name": "id",
@@ -60114,9 +59750,7 @@
             }
           }
         },
-        "tags": [
-          "Gallery"
-        ],
+        "tags": ["Gallery"],
         "parameters": [
           {
             "name": "id",
@@ -60205,9 +59839,7 @@
             }
           }
         },
-        "tags": [
-          "Gallery"
-        ],
+        "tags": ["Gallery"],
         "parameters": [
           {
             "name": "id",
@@ -60287,9 +59919,7 @@
             }
           }
         },
-        "tags": [
-          "Group"
-        ],
+        "tags": ["Group"],
         "parameters": [
           {
             "name": "sort",
@@ -60459,9 +60089,7 @@
             }
           }
         },
-        "tags": [
-          "Group"
-        ],
+        "tags": ["Group"],
         "parameters": [],
         "operationId": "post/groups",
         "requestBody": {
@@ -60540,9 +60168,7 @@
             }
           }
         },
-        "tags": [
-          "Group"
-        ],
+        "tags": ["Group"],
         "parameters": [
           {
             "name": "id",
@@ -60620,9 +60246,7 @@
             }
           }
         },
-        "tags": [
-          "Group"
-        ],
+        "tags": ["Group"],
         "parameters": [
           {
             "name": "id",
@@ -60711,9 +60335,7 @@
             }
           }
         },
-        "tags": [
-          "Group"
-        ],
+        "tags": ["Group"],
         "parameters": [
           {
             "name": "id",
@@ -60793,9 +60415,7 @@
             }
           }
         },
-        "tags": [
-          "Highlight"
-        ],
+        "tags": ["Highlight"],
         "parameters": [
           {
             "name": "sort",
@@ -60965,9 +60585,7 @@
             }
           }
         },
-        "tags": [
-          "Highlight"
-        ],
+        "tags": ["Highlight"],
         "parameters": [],
         "operationId": "post/highlights",
         "requestBody": {
@@ -61046,9 +60664,7 @@
             }
           }
         },
-        "tags": [
-          "Highlight"
-        ],
+        "tags": ["Highlight"],
         "parameters": [
           {
             "name": "id",
@@ -61126,9 +60742,7 @@
             }
           }
         },
-        "tags": [
-          "Highlight"
-        ],
+        "tags": ["Highlight"],
         "parameters": [
           {
             "name": "id",
@@ -61217,9 +60831,7 @@
             }
           }
         },
-        "tags": [
-          "Highlight"
-        ],
+        "tags": ["Highlight"],
         "parameters": [
           {
             "name": "id",
@@ -61299,9 +60911,7 @@
             }
           }
         },
-        "tags": [
-          "Lesson"
-        ],
+        "tags": ["Lesson"],
         "parameters": [
           {
             "name": "sort",
@@ -61471,9 +61081,7 @@
             }
           }
         },
-        "tags": [
-          "Lesson"
-        ],
+        "tags": ["Lesson"],
         "parameters": [],
         "operationId": "post/lessons",
         "requestBody": {
@@ -61552,9 +61160,7 @@
             }
           }
         },
-        "tags": [
-          "Lesson"
-        ],
+        "tags": ["Lesson"],
         "parameters": [
           {
             "name": "id",
@@ -61632,9 +61238,7 @@
             }
           }
         },
-        "tags": [
-          "Lesson"
-        ],
+        "tags": ["Lesson"],
         "parameters": [
           {
             "name": "id",
@@ -61723,9 +61327,7 @@
             }
           }
         },
-        "tags": [
-          "Lesson"
-        ],
+        "tags": ["Lesson"],
         "parameters": [
           {
             "name": "id",
@@ -61805,9 +61407,7 @@
             }
           }
         },
-        "tags": [
-          "Note"
-        ],
+        "tags": ["Note"],
         "parameters": [
           {
             "name": "sort",
@@ -61977,9 +61577,7 @@
             }
           }
         },
-        "tags": [
-          "Note"
-        ],
+        "tags": ["Note"],
         "parameters": [],
         "operationId": "post/notes",
         "requestBody": {
@@ -62058,9 +61656,7 @@
             }
           }
         },
-        "tags": [
-          "Note"
-        ],
+        "tags": ["Note"],
         "parameters": [
           {
             "name": "id",
@@ -62138,9 +61734,7 @@
             }
           }
         },
-        "tags": [
-          "Note"
-        ],
+        "tags": ["Note"],
         "parameters": [
           {
             "name": "id",
@@ -62229,9 +61823,7 @@
             }
           }
         },
-        "tags": [
-          "Note"
-        ],
+        "tags": ["Note"],
         "parameters": [
           {
             "name": "id",
@@ -62311,9 +61903,7 @@
             }
           }
         },
-        "tags": [
-          "Playlist"
-        ],
+        "tags": ["Playlist"],
         "parameters": [
           {
             "name": "sort",
@@ -62483,9 +62073,7 @@
             }
           }
         },
-        "tags": [
-          "Playlist"
-        ],
+        "tags": ["Playlist"],
         "parameters": [],
         "operationId": "post/playlists",
         "requestBody": {
@@ -62564,9 +62152,7 @@
             }
           }
         },
-        "tags": [
-          "Playlist"
-        ],
+        "tags": ["Playlist"],
         "parameters": [
           {
             "name": "id",
@@ -62644,9 +62230,7 @@
             }
           }
         },
-        "tags": [
-          "Playlist"
-        ],
+        "tags": ["Playlist"],
         "parameters": [
           {
             "name": "id",
@@ -62735,9 +62319,7 @@
             }
           }
         },
-        "tags": [
-          "Playlist"
-        ],
+        "tags": ["Playlist"],
         "parameters": [
           {
             "name": "id",
@@ -62817,9 +62399,7 @@
             }
           }
         },
-        "tags": [
-          "Report"
-        ],
+        "tags": ["Report"],
         "parameters": [
           {
             "name": "sort",
@@ -62989,9 +62569,7 @@
             }
           }
         },
-        "tags": [
-          "Report"
-        ],
+        "tags": ["Report"],
         "parameters": [],
         "operationId": "post/reports",
         "requestBody": {
@@ -63070,9 +62648,7 @@
             }
           }
         },
-        "tags": [
-          "Report"
-        ],
+        "tags": ["Report"],
         "parameters": [
           {
             "name": "id",
@@ -63150,9 +62726,7 @@
             }
           }
         },
-        "tags": [
-          "Report"
-        ],
+        "tags": ["Report"],
         "parameters": [
           {
             "name": "id",
@@ -63241,9 +62815,7 @@
             }
           }
         },
-        "tags": [
-          "Report"
-        ],
+        "tags": ["Report"],
         "parameters": [
           {
             "name": "id",
@@ -63323,9 +62895,7 @@
             }
           }
         },
-        "tags": [
-          "Tag"
-        ],
+        "tags": ["Tag"],
         "parameters": [
           {
             "name": "sort",
@@ -63495,9 +63065,7 @@
             }
           }
         },
-        "tags": [
-          "Tag"
-        ],
+        "tags": ["Tag"],
         "parameters": [],
         "operationId": "post/tags",
         "requestBody": {
@@ -63576,9 +63144,7 @@
             }
           }
         },
-        "tags": [
-          "Tag"
-        ],
+        "tags": ["Tag"],
         "parameters": [
           {
             "name": "id",
@@ -63656,9 +63222,7 @@
             }
           }
         },
-        "tags": [
-          "Tag"
-        ],
+        "tags": ["Tag"],
         "parameters": [
           {
             "name": "id",
@@ -63747,9 +63311,7 @@
             }
           }
         },
-        "tags": [
-          "Tag"
-        ],
+        "tags": ["Tag"],
         "parameters": [
           {
             "name": "id",
@@ -63784,18 +63346,14 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Upload - File"
-        ],
+        "tags": ["Upload - File"],
         "requestBody": {
           "description": "Upload files",
           "required": true,
           "content": {
             "multipart/form-data": {
               "schema": {
-                "required": [
-                  "files"
-                ],
+                "required": ["files"],
                 "type": "object",
                 "properties": {
                   "path": {
@@ -63858,9 +63416,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Upload - File"
-        ],
+        "tags": ["Upload - File"],
         "requestBody": {
           "description": "Upload files",
           "required": true,
@@ -63896,9 +63452,7 @@
     },
     "/upload/files": {
       "get": {
-        "tags": [
-          "Upload - File"
-        ],
+        "tags": ["Upload - File"],
         "responses": {
           "200": {
             "description": "Get a list of files",
@@ -63930,9 +63484,7 @@
             }
           }
         ],
-        "tags": [
-          "Upload - File"
-        ],
+        "tags": ["Upload - File"],
         "responses": {
           "200": {
             "description": "Get a specific file",
@@ -63959,9 +63511,7 @@
             }
           }
         ],
-        "tags": [
-          "Upload - File"
-        ],
+        "tags": ["Upload - File"],
         "responses": {
           "200": {
             "description": "Delete a file",
