@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-10-02T13:40:41.109Z"
+    "x-generation-date": "2025-10-07T15:27:52.653Z"
   },
   "x-strapi-config": {
     "plugins": ["upload"],
@@ -3298,6 +3298,9 @@
                                                                       }
                                                                     }
                                                                   }
+                                                                },
+                                                                "isPublic": {
+                                                                  "type": "boolean"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -6891,6 +6894,9 @@
                                                                       }
                                                                     }
                                                                   },
+                                                                  "isPublic": {
+                                                                    "type": "boolean"
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -7593,7 +7599,7 @@
         "required": ["data"],
         "properties": {
           "data": {
-            "required": ["email", "isEnabled"],
+            "required": ["email", "isEnabled", "isPublic"],
             "type": "object",
             "properties": {
               "email": {
@@ -7944,6 +7950,9 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "isPublic": {
+                "type": "boolean"
               }
             }
           }
@@ -7997,7 +8006,7 @@
       },
       "AuthorizedUser": {
         "type": "object",
-        "required": ["email", "isEnabled"],
+        "required": ["email", "isEnabled", "isPublic"],
         "properties": {
           "email": {
             "type": "string",
@@ -11036,6 +11045,9 @@
                                         }
                                       }
                                     },
+                                    "isPublic": {
+                                      "type": "boolean"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -11651,6 +11663,9 @@
                 }
               }
             }
+          },
+          "isPublic": {
+            "type": "boolean"
           },
           "createdAt": {
             "type": "string",
@@ -14953,6 +14968,9 @@
                             }
                           }
                         },
+                        "isPublic": {
+                          "type": "boolean"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -17740,6 +17758,9 @@
                                                                                     }
                                                                                   }
                                                                                 }
+                                                                              },
+                                                                              "isPublic": {
+                                                                                "type": "boolean"
                                                                               },
                                                                               "createdAt": {
                                                                                 "type": "string",
@@ -21545,6 +21566,9 @@
                                                                       }
                                                                     }
                                                                   }
+                                                                },
+                                                                "isPublic": {
+                                                                  "type": "boolean"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -25487,6 +25511,9 @@
                           }
                         }
                       },
+                      "isPublic": {
+                        "type": "boolean"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -28934,6 +28961,9 @@
                           }
                         }
                       },
+                      "isPublic": {
+                        "type": "boolean"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -32353,6 +32383,9 @@
                               }
                             }
                           }
+                        },
+                        "isPublic": {
+                          "type": "boolean"
                         },
                         "createdAt": {
                           "type": "string",
@@ -36261,6 +36294,9 @@
                             }
                           }
                         },
+                        "isPublic": {
+                          "type": "boolean"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -39805,6 +39841,9 @@
                           }
                         }
                       },
+                      "isPublic": {
+                        "type": "boolean"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -42757,6 +42796,9 @@
                                                                         }
                                                                       }
                                                                     }
+                                                                  },
+                                                                  "isPublic": {
+                                                                    "type": "boolean"
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
@@ -46119,6 +46161,9 @@
                                                                                     }
                                                                                   }
                                                                                 }
+                                                                              },
+                                                                              "isPublic": {
+                                                                                "type": "boolean"
                                                                               },
                                                                               "createdAt": {
                                                                                 "type": "string",
@@ -49797,6 +49842,9 @@
                                                                         }
                                                                       }
                                                                     }
+                                                                  },
+                                                                  "isPublic": {
+                                                                    "type": "boolean"
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
@@ -53675,6 +53723,9 @@
                                                                         }
                                                                       }
                                                                     }
+                                                                  },
+                                                                  "isPublic": {
+                                                                    "type": "boolean"
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
