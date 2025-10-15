@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-10-09T14:19:21.255Z"
+    "x-generation-date": "2025-10-15T14:21:06.210Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -3320,6 +3320,10 @@
                                                                 },
                                                                 "isPublic": {
                                                                   "type": "boolean"
+                                                                },
+                                                                "workTerm": {
+                                                                  "type": "string",
+                                                                  "format": "date"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -6933,6 +6937,10 @@
                                                                   "isPublic": {
                                                                     "type": "boolean"
                                                                   },
+                                                                  "workTerm": {
+                                                                    "type": "string",
+                                                                    "format": "date"
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -8003,6 +8011,10 @@
               },
               "isPublic": {
                 "type": "boolean"
+              },
+              "workTerm": {
+                "type": "string",
+                "format": "date"
               }
             }
           }
@@ -11102,6 +11114,10 @@
                                     "isPublic": {
                                       "type": "boolean"
                                     },
+                                    "workTerm": {
+                                      "type": "string",
+                                      "format": "date"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -11720,6 +11736,10 @@
           },
           "isPublic": {
             "type": "boolean"
+          },
+          "workTerm": {
+            "type": "string",
+            "format": "date"
           },
           "createdAt": {
             "type": "string",
@@ -15027,6 +15047,10 @@
                         "isPublic": {
                           "type": "boolean"
                         },
+                        "workTerm": {
+                          "type": "string",
+                          "format": "date"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -17836,6 +17860,10 @@
                                                                               },
                                                                               "isPublic": {
                                                                                 "type": "boolean"
+                                                                              },
+                                                                              "workTerm": {
+                                                                                "type": "string",
+                                                                                "format": "date"
                                                                               },
                                                                               "createdAt": {
                                                                                 "type": "string",
@@ -21665,6 +21693,10 @@
                                                                 },
                                                                 "isPublic": {
                                                                   "type": "boolean"
+                                                                },
+                                                                "workTerm": {
+                                                                  "type": "string",
+                                                                  "format": "date"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -25623,6 +25655,10 @@
                       "isPublic": {
                         "type": "boolean"
                       },
+                      "workTerm": {
+                        "type": "string",
+                        "format": "date"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -29082,6 +29118,10 @@
                       "isPublic": {
                         "type": "boolean"
                       },
+                      "workTerm": {
+                        "type": "string",
+                        "format": "date"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -32506,6 +32546,10 @@
                         },
                         "isPublic": {
                           "type": "boolean"
+                        },
+                        "workTerm": {
+                          "type": "string",
+                          "format": "date"
                         },
                         "createdAt": {
                           "type": "string",
@@ -36435,6 +36479,10 @@
                         "isPublic": {
                           "type": "boolean"
                         },
+                        "workTerm": {
+                          "type": "string",
+                          "format": "date"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -39987,6 +40035,10 @@
                       "isPublic": {
                         "type": "boolean"
                       },
+                      "workTerm": {
+                        "type": "string",
+                        "format": "date"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -42960,6 +43012,10 @@
                                                                   },
                                                                   "isPublic": {
                                                                     "type": "boolean"
+                                                                  },
+                                                                  "workTerm": {
+                                                                    "type": "string",
+                                                                    "format": "date"
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
@@ -46349,6 +46405,10 @@
                                                                               },
                                                                               "isPublic": {
                                                                                 "type": "boolean"
+                                                                              },
+                                                                              "workTerm": {
+                                                                                "type": "string",
+                                                                                "format": "date"
                                                                               },
                                                                               "createdAt": {
                                                                                 "type": "string",
@@ -50056,6 +50116,10 @@
                                                                   },
                                                                   "isPublic": {
                                                                     "type": "boolean"
+                                                                  },
+                                                                  "workTerm": {
+                                                                    "type": "string",
+                                                                    "format": "date"
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
@@ -53978,6 +54042,10 @@
                                                                   },
                                                                   "isPublic": {
                                                                     "type": "boolean"
+                                                                  },
+                                                                  "workTerm": {
+                                                                    "type": "string",
+                                                                    "format": "date"
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
