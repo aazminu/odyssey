@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-10-23T14:20:28.624Z"
+    "x-generation-date": "2025-10-23T17:13:27.087Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -3324,7 +3324,7 @@
                                                                 "isPublic": {
                                                                   "type": "boolean"
                                                                 },
-                                                                "droplets_favorited": {
+                                                                "dropletsFavorited": {
                                                                   "type": "object",
                                                                   "properties": {
                                                                     "data": {
@@ -3893,7 +3893,7 @@
                         "type": "number",
                         "format": "float"
                       },
-                      "users_favorited": {
+                      "usersFavorited": {
                         "type": "object",
                         "properties": {
                           "data": {
@@ -6979,7 +6979,7 @@
                                                                   "isPublic": {
                                                                     "type": "boolean"
                                                                   },
-                                                                  "droplets_favorited": {
+                                                                  "dropletsFavorited": {
                                                                     "type": "object",
                                                                     "properties": {
                                                                       "data": {
@@ -7548,7 +7548,7 @@
                           "type": "number",
                           "format": "float"
                         },
-                        "users_favorited": {
+                        "usersFavorited": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -8090,7 +8090,7 @@
               "isPublic": {
                 "type": "boolean"
               },
-              "droplets_favorited": {
+              "dropletsFavorited": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -10396,7 +10396,7 @@
                                                                   "type": "number",
                                                                   "format": "float"
                                                                 },
-                                                                "users_favorited": {
+                                                                "usersFavorited": {
                                                                   "type": "object",
                                                                   "properties": {
                                                                     "data": {
@@ -11222,7 +11222,7 @@
                                     "isPublic": {
                                       "type": "boolean"
                                     },
-                                    "droplets_favorited": {
+                                    "dropletsFavorited": {
                                       "type": "object",
                                       "properties": {
                                         "data": {
@@ -11864,7 +11864,7 @@
           "isPublic": {
             "type": "boolean"
           },
-          "droplets_favorited": {
+          "dropletsFavorited": {
             "type": "object",
             "properties": {
               "data": {
@@ -14340,7 +14340,7 @@
                                                     "type": "number",
                                                     "format": "float"
                                                   },
-                                                  "users_favorited": {
+                                                  "usersFavorited": {
                                                     "type": "object",
                                                     "properties": {
                                                       "data": {
@@ -15213,7 +15213,7 @@
                         "isPublic": {
                           "type": "boolean"
                         },
-                        "droplets_favorited": {
+                        "dropletsFavorited": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -15569,7 +15569,7 @@
                 "type": "number",
                 "format": "float"
               },
-              "users_favorited": {
+              "usersFavorited": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -18057,7 +18057,7 @@
                                                                               "isPublic": {
                                                                                 "type": "boolean"
                                                                               },
-                                                                              "droplets_favorited": {
+                                                                              "dropletsFavorited": {
                                                                                 "type": "object",
                                                                                 "properties": {
                                                                                   "data": {
@@ -18746,7 +18746,7 @@
                                         "type": "number",
                                         "format": "float"
                                       },
-                                      "users_favorited": {
+                                      "usersFavorited": {
                                         "type": "object",
                                         "properties": {
                                           "data": {
@@ -19138,7 +19138,7 @@
             "type": "number",
             "format": "float"
           },
-          "users_favorited": {
+          "usersFavorited": {
             "type": "object",
             "properties": {
               "data": {
@@ -21952,7 +21952,7 @@
                                                                 "isPublic": {
                                                                   "type": "boolean"
                                                                 },
-                                                                "droplets_favorited": {
+                                                                "dropletsFavorited": {
                                                                   "type": "object",
                                                                   "properties": {
                                                                     "data": {
@@ -22521,7 +22521,7 @@
                         "type": "number",
                         "format": "float"
                       },
-                      "users_favorited": {
+                      "usersFavorited": {
                         "type": "object",
                         "properties": {
                           "data": {
@@ -25099,7 +25099,7 @@
                                                   "type": "number",
                                                   "format": "float"
                                                 },
-                                                "users_favorited": {
+                                                "usersFavorited": {
                                                   "type": "object",
                                                   "properties": {
                                                     "data": {
@@ -25972,7 +25972,7 @@
                       "isPublic": {
                         "type": "boolean"
                       },
-                      "droplets_favorited": {
+                      "dropletsFavorited": {
                         "type": "object",
                         "properties": {
                           "data": {
@@ -28604,7 +28604,7 @@
                                                   "type": "number",
                                                   "format": "float"
                                                 },
-                                                "users_favorited": {
+                                                "usersFavorited": {
                                                   "type": "object",
                                                   "properties": {
                                                     "data": {
@@ -29477,7 +29477,7 @@
                       "isPublic": {
                         "type": "boolean"
                       },
-                      "droplets_favorited": {
+                      "dropletsFavorited": {
                         "type": "object",
                         "properties": {
                           "data": {
@@ -32075,7 +32075,7 @@
                                                     "type": "number",
                                                     "format": "float"
                                                   },
-                                                  "users_favorited": {
+                                                  "usersFavorited": {
                                                     "type": "object",
                                                     "properties": {
                                                       "data": {
@@ -32948,7 +32948,7 @@
                         "isPublic": {
                           "type": "boolean"
                         },
-                        "droplets_favorited": {
+                        "dropletsFavorited": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -36046,7 +36046,7 @@
                                                     "type": "number",
                                                     "format": "float"
                                                   },
-                                                  "users_favorited": {
+                                                  "usersFavorited": {
                                                     "type": "object",
                                                     "properties": {
                                                       "data": {
@@ -36919,7 +36919,7 @@
                         "isPublic": {
                           "type": "boolean"
                         },
-                        "droplets_favorited": {
+                        "dropletsFavorited": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -39641,7 +39641,7 @@
                                                   "type": "number",
                                                   "format": "float"
                                                 },
-                                                "users_favorited": {
+                                                "usersFavorited": {
                                                   "type": "object",
                                                   "properties": {
                                                     "data": {
@@ -40514,7 +40514,7 @@
                       "isPublic": {
                         "type": "boolean"
                       },
-                      "droplets_favorited": {
+                      "dropletsFavorited": {
                         "type": "object",
                         "properties": {
                           "data": {
@@ -43511,7 +43511,7 @@
                                                                   "isPublic": {
                                                                     "type": "boolean"
                                                                   },
-                                                                  "droplets_favorited": {
+                                                                  "dropletsFavorited": {
                                                                     "type": "object",
                                                                     "properties": {
                                                                       "data": {
@@ -44080,7 +44080,7 @@
                           "type": "number",
                           "format": "float"
                         },
-                        "users_favorited": {
+                        "usersFavorited": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -46943,7 +46943,7 @@
                                                                               "isPublic": {
                                                                                 "type": "boolean"
                                                                               },
-                                                                              "droplets_favorited": {
+                                                                              "dropletsFavorited": {
                                                                                 "type": "object",
                                                                                 "properties": {
                                                                                   "data": {
@@ -47592,7 +47592,7 @@
                                       "type": "number",
                                       "format": "float"
                                     },
-                                    "users_favorited": {
+                                    "usersFavorited": {
                                       "type": "object",
                                       "properties": {
                                         "data": {
@@ -50693,7 +50693,7 @@
                                                                   "isPublic": {
                                                                     "type": "boolean"
                                                                   },
-                                                                  "droplets_favorited": {
+                                                                  "dropletsFavorited": {
                                                                     "type": "object",
                                                                     "properties": {
                                                                       "data": {
@@ -51262,7 +51262,7 @@
                           "type": "number",
                           "format": "float"
                         },
-                        "users_favorited": {
+                        "usersFavorited": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -54658,7 +54658,7 @@
                                                                   "isPublic": {
                                                                     "type": "boolean"
                                                                   },
-                                                                  "droplets_favorited": {
+                                                                  "dropletsFavorited": {
                                                                     "type": "object",
                                                                     "properties": {
                                                                       "data": {
@@ -55227,7 +55227,7 @@
                           "type": "number",
                           "format": "float"
                         },
-                        "users_favorited": {
+                        "usersFavorited": {
                           "type": "object",
                           "properties": {
                             "data": {
