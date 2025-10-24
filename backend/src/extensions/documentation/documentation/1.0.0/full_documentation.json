@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-10-24T12:54:30.048Z"
+    "x-generation-date": "2025-10-24T14:40:40.627Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -2198,9 +2198,6 @@
                                                                               "completionDate": {
                                                                                 "type": "string",
                                                                                 "format": "date-time"
-                                                                              },
-                                                                              "isFavorited": {
-                                                                                "type": "boolean"
                                                                               },
                                                                               "createdAt": {
                                                                                 "type": "string",
@@ -5853,9 +5850,6 @@
                                                                                 "completionDate": {
                                                                                   "type": "string",
                                                                                   "format": "date-time"
-                                                                                },
-                                                                                "isFavorited": {
-                                                                                  "type": "boolean"
                                                                                 },
                                                                                 "createdAt": {
                                                                                   "type": "string",
@@ -11367,9 +11361,6 @@
                           "type": "string",
                           "format": "date-time"
                         },
-                        "isFavorited": {
-                          "type": "boolean"
-                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -14471,9 +14462,6 @@
                                       "completionDate": {
                                         "type": "string",
                                         "format": "date-time"
-                                      },
-                                      "isFavorited": {
-                                        "type": "boolean"
                                       },
                                       "createdAt": {
                                         "type": "string",
@@ -18202,9 +18190,6 @@
                                                                     "type": "string",
                                                                     "format": "date-time"
                                                                   },
-                                                                  "isFavorited": {
-                                                                    "type": "boolean"
-                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -20826,9 +20811,6 @@
                                                                               "completionDate": {
                                                                                 "type": "string",
                                                                                 "format": "date-time"
-                                                                              },
-                                                                              "isFavorited": {
-                                                                                "type": "boolean"
                                                                               },
                                                                               "createdAt": {
                                                                                 "type": "string",
@@ -25231,9 +25213,6 @@
                                       "type": "string",
                                       "format": "date-time"
                                     },
-                                    "isFavorited": {
-                                      "type": "boolean"
-                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -26238,9 +26217,6 @@
               "completionDate": {
                 "type": "string",
                 "format": "date-time"
-              },
-              "isFavorited": {
-                "type": "boolean"
               }
             }
           }
@@ -28736,9 +28712,6 @@
                                       "type": "string",
                                       "format": "date-time"
                                     },
-                                    "isFavorited": {
-                                      "type": "boolean"
-                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -29621,9 +29594,6 @@
           "completionDate": {
             "type": "string",
             "format": "date-time"
-          },
-          "isFavorited": {
-            "type": "boolean"
           },
           "createdAt": {
             "type": "string",
@@ -32206,9 +32176,6 @@
                                       "completionDate": {
                                         "type": "string",
                                         "format": "date-time"
-                                      },
-                                      "isFavorited": {
-                                        "type": "boolean"
                                       },
                                       "createdAt": {
                                         "type": "string",
@@ -36178,9 +36145,6 @@
                                         "type": "string",
                                         "format": "date-time"
                                       },
-                                      "isFavorited": {
-                                        "type": "boolean"
-                                      },
                                       "createdAt": {
                                         "type": "string",
                                         "format": "date-time"
@@ -39773,9 +39737,6 @@
                                       "type": "string",
                                       "format": "date-time"
                                     },
-                                    "isFavorited": {
-                                      "type": "boolean"
-                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -42385,9 +42346,6 @@
                                                                                 "completionDate": {
                                                                                   "type": "string",
                                                                                   "format": "date-time"
-                                                                                },
-                                                                                "isFavorited": {
-                                                                                  "type": "boolean"
                                                                                 },
                                                                                 "createdAt": {
                                                                                   "type": "string",
@@ -45817,9 +45775,6 @@
                                                                                             "completionDate": {
                                                                                               "type": "string",
                                                                                               "format": "date-time"
-                                                                                            },
-                                                                                            "isFavorited": {
-                                                                                              "type": "boolean"
                                                                                             },
                                                                                             "createdAt": {
                                                                                               "type": "string",
@@ -49567,9 +49522,6 @@
                                                                                 "completionDate": {
                                                                                   "type": "string",
                                                                                   "format": "date-time"
-                                                                                },
-                                                                                "isFavorited": {
-                                                                                  "type": "boolean"
                                                                                 },
                                                                                 "createdAt": {
                                                                                   "type": "string",
@@ -53540,9 +53492,6 @@
                                                                                 "completionDate": {
                                                                                   "type": "string",
                                                                                   "format": "date-time"
-                                                                                },
-                                                                                "isFavorited": {
-                                                                                  "type": "boolean"
                                                                                 },
                                                                                 "createdAt": {
                                                                                   "type": "string",
