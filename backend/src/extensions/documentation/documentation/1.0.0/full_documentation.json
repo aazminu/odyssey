@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-10-21T13:34:35.972Z"
+    "x-generation-date": "2025-10-17T16:29:47.020Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -7166,11 +7166,15 @@
                         },
                         "focusArea": {
                           "type": "string",
+<<<<<<<<< Temporary merge branch 1
+                          "enum": ["personal", "professional", "technical"]
+=========
                           "enum": [
                             "personal",
                             "professional",
                             "technical"
                           ]
+>>>>>>>>> Temporary merge branch 2
                         },
                         "lessons": {
                           "type": "object",
@@ -7383,11 +7387,15 @@
                         },
                         "status": {
                           "type": "string",
+<<<<<<<<< Temporary merge branch 1
+                          "enum": ["draft", "edit", "published"]
+=========
                           "enum": [
                             "draft",
                             "edit",
                             "published"
                           ]
+>>>>>>>>> Temporary merge branch 2
                         },
                         "groups": {
                           "type": "object",
@@ -7640,6 +7648,12 @@
       },
       "AuthorizedUserRequest": {
         "type": "object",
+<<<<<<<<< Temporary merge branch 1
+        "required": ["data"],
+        "properties": {
+          "data": {
+            "required": ["email", "isEnabled", "isPublic"],
+=========
         "required": [
           "data"
         ],
@@ -7647,8 +7661,7 @@
           "data": {
             "required": [
               "email",
-              "isEnabled",
-              "isPublic"
+              "isEnabled"
             ],
             "type": "object",
             "properties": {
@@ -8058,8 +8071,7 @@
         "type": "object",
         "required": [
           "email",
-          "isEnabled",
-          "isPublic"
+          "isEnabled"
         ],
         "properties": {
           "email": {
@@ -22534,10 +22546,14 @@
                                                 },
                                                 "type": {
                                                   "type": "string",
+<<<<<<<<< Temporary merge branch 1
+                                                  "enum": ["knowledge", "skill"]
+=========
                                                   "enum": [
                                                     "knowledge",
                                                     "skill"
                                                   ]
+>>>>>>>>> Temporary merge branch 2
                                                 },
                                                 "authors": {
                                                   "type": "object",
@@ -25993,10 +26009,14 @@
                                                 },
                                                 "type": {
                                                   "type": "string",
+<<<<<<<<< Temporary merge branch 1
+                                                  "enum": ["knowledge", "skill"]
+=========
                                                   "enum": [
                                                     "knowledge",
                                                     "skill"
                                                   ]
+>>>>>>>>> Temporary merge branch 2
                                                 },
                                                 "authors": {
                                                   "type": "object",
@@ -32623,6 +32643,8 @@
         }
       },
       "GalleryRequest": {
+<<<<<<<<< Temporary merge branch 1
+=========
         "type": "object",
         "required": [
           "data"
@@ -33058,16 +33080,437 @@
         }
       },
       "GroupRequest": {
+>>>>>>>>> Temporary merge branch 2
         "type": "object",
-        "required": [
-          "data"
-        ],
+        "required": ["data"],
         "properties": {
           "data": {
-            "required": [
-              "groupName",
-              "slug"
-            ],
+            "required": ["title", "slug", "subtitle"],
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "string"
+              },
+              "items": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GalleriesGalleryItemComponent"
+                }
+              },
+              "subtitle": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "GalleryListResponseDataItem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "attributes": {
+            "$ref": "#/components/schemas/Gallery"
+          }
+        }
+      },
+      "GalleryListResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GalleryListResponseDataItem"
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "pagination": {
+                "type": "object",
+                "properties": {
+                  "page": {
+                    "type": "integer"
+                  },
+                  "pageSize": {
+                    "type": "integer",
+                    "minimum": 25
+                  },
+                  "pageCount": {
+                    "type": "integer",
+                    "maximum": 1
+                  },
+                  "total": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Gallery": {
+        "type": "object",
+        "required": ["title", "slug", "subtitle"],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GalleriesGalleryItemComponent"
+            }
+          },
+          "subtitle": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdBy": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "attributes": {
+                    "type": "object",
+                    "properties": {
+                      "firstname": {
+                        "type": "string"
+                      },
+                      "lastname": {
+                        "type": "string"
+                      },
+                      "username": {
+                        "type": "string"
+                      },
+                      "email": {
+                        "type": "string",
+                        "format": "email"
+                      },
+                      "resetPasswordToken": {
+                        "type": "string"
+                      },
+                      "registrationToken": {
+                        "type": "string"
+                      },
+                      "isActive": {
+                        "type": "boolean"
+                      },
+                      "roles": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "attributes": {
+                                  "type": "object",
+                                  "properties": {
+                                    "name": {
+                                      "type": "string"
+                                    },
+                                    "code": {
+                                      "type": "string"
+                                    },
+                                    "description": {
+                                      "type": "string"
+                                    },
+                                    "users": {
+                                      "type": "object",
+                                      "properties": {
+                                        "data": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "number"
+                                              },
+                                              "attributes": {
+                                                "type": "object",
+                                                "properties": {}
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "permissions": {
+                                      "type": "object",
+                                      "properties": {
+                                        "data": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "number"
+                                              },
+                                              "attributes": {
+                                                "type": "object",
+                                                "properties": {
+                                                  "action": {
+                                                    "type": "string"
+                                                  },
+                                                  "actionParameters": {},
+                                                  "subject": {
+                                                    "type": "string"
+                                                  },
+                                                  "properties": {},
+                                                  "conditions": {},
+                                                  "role": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "data": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "id": {
+                                                            "type": "number"
+                                                          },
+                                                          "attributes": {
+                                                            "type": "object",
+                                                            "properties": {}
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "createdAt": {
+                                                    "type": "string",
+                                                    "format": "date-time"
+                                                  },
+                                                  "updatedAt": {
+                                                    "type": "string",
+                                                    "format": "date-time"
+                                                  },
+                                                  "createdBy": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "data": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "id": {
+                                                            "type": "number"
+                                                          },
+                                                          "attributes": {
+                                                            "type": "object",
+                                                            "properties": {}
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "updatedBy": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "data": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "id": {
+                                                            "type": "number"
+                                                          },
+                                                          "attributes": {
+                                                            "type": "object",
+                                                            "properties": {}
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "createdAt": {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    "updatedAt": {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
+                                    "createdBy": {
+                                      "type": "object",
+                                      "properties": {
+                                        "data": {
+                                          "type": "object",
+                                          "properties": {
+                                            "id": {
+                                              "type": "number"
+                                            },
+                                            "attributes": {
+                                              "type": "object",
+                                              "properties": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "updatedBy": {
+                                      "type": "object",
+                                      "properties": {
+                                        "data": {
+                                          "type": "object",
+                                          "properties": {
+                                            "id": {
+                                              "type": "number"
+                                            },
+                                            "attributes": {
+                                              "type": "object",
+                                              "properties": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "blocked": {
+                        "type": "boolean"
+                      },
+                      "preferedLanguage": {
+                        "type": "string"
+                      },
+                      "createdAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "updatedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "createdBy": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "attributes": {
+                                "type": "object",
+                                "properties": {}
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "updatedBy": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "attributes": {
+                                "type": "object",
+                                "properties": {}
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "updatedBy": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "attributes": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "GalleryResponseDataObject": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "attributes": {
+            "$ref": "#/components/schemas/Gallery"
+          }
+        }
+      },
+      "GalleryResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/GalleryResponseDataObject"
+          },
+          "meta": {
+            "type": "object"
+          }
+        }
+      },
+      "GalleriesGalleryItemComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "image_urls": {}
+        }
+      },
+      "GroupRequest": {
+        "type": "object",
+        "required": ["data"],
+        "properties": {
+          "data": {
+            "required": ["groupName", "slug"],
             "type": "object",
             "properties": {
               "groupName": {
@@ -36898,10 +37341,14 @@
                                                 },
                                                 "type": {
                                                   "type": "string",
+<<<<<<<<< Temporary merge branch 1
+                                                  "enum": ["knowledge", "skill"]
+=========
                                                   "enum": [
                                                     "knowledge",
                                                     "skill"
                                                   ]
+>>>>>>>>> Temporary merge branch 2
                                                 },
                                                 "authors": {
                                                   "type": "object",
@@ -50880,6 +51327,7 @@
                 "enum": [
                   "bug"
                 ]
+>>>>>>>>> Temporary merge branch 2
               },
               "time": {
                 "type": "string",
@@ -59842,9 +60290,13 @@
             }
           }
         },
+<<<<<<<<< Temporary merge branch 1
+        "tags": ["Gallery"],
+=========
         "tags": [
           "Gallery"
         ],
+>>>>>>>>> Temporary merge branch 2
         "parameters": [
           {
             "name": "sort",
@@ -60014,9 +60466,13 @@
             }
           }
         },
+<<<<<<<<< Temporary merge branch 1
+        "tags": ["Gallery"],
+=========
         "tags": [
           "Gallery"
         ],
+>>>>>>>>> Temporary merge branch 2
         "parameters": [],
         "operationId": "post/galleries",
         "requestBody": {
@@ -60095,9 +60551,13 @@
             }
           }
         },
+<<<<<<<<< Temporary merge branch 1
+        "tags": ["Gallery"],
+=========
         "tags": [
           "Gallery"
         ],
+>>>>>>>>> Temporary merge branch 2
         "parameters": [
           {
             "name": "id",
@@ -60175,9 +60635,13 @@
             }
           }
         },
+<<<<<<<<< Temporary merge branch 1
+        "tags": ["Gallery"],
+=========
         "tags": [
           "Gallery"
         ],
+>>>>>>>>> Temporary merge branch 2
         "parameters": [
           {
             "name": "id",
@@ -60266,9 +60730,13 @@
             }
           }
         },
+<<<<<<<<< Temporary merge branch 1
+        "tags": ["Gallery"],
+=========
         "tags": [
           "Gallery"
         ],
+>>>>>>>>> Temporary merge branch 2
         "parameters": [
           {
             "name": "id",
