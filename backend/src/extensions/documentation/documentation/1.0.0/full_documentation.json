@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-10-21T13:34:35.972Z"
+    "x-generation-date": "2025-10-27T19:12:49.201Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -2106,6 +2106,9 @@
                                                                                                 }
                                                                                               }
                                                                                             },
+                                                                                            "orderIndex": {
+                                                                                              "type": "integer"
+                                                                                            },
                                                                                             "createdAt": {
                                                                                               "type": "string",
                                                                                               "format": "date-time"
@@ -3321,6 +3324,26 @@
                                                                 "isPublic": {
                                                                   "type": "boolean"
                                                                 },
+                                                                "dropletsFavorited": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "data": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "id": {
+                                                                            "type": "number"
+                                                                          },
+                                                                          "attributes": {
+                                                                            "type": "object",
+                                                                            "properties": {}
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
                                                                 "createdAt": {
                                                                   "type": "string",
                                                                   "format": "date-time"
@@ -3869,6 +3892,26 @@
                       "averageRating": {
                         "type": "number",
                         "format": "float"
+                      },
+                      "usersFavorited": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "attributes": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        }
                       },
                       "createdAt": {
                         "type": "string",
@@ -5718,6 +5761,9 @@
                                                                                                   }
                                                                                                 }
                                                                                               },
+                                                                                              "orderIndex": {
+                                                                                                "type": "integer"
+                                                                                              },
                                                                                               "createdAt": {
                                                                                                 "type": "string",
                                                                                                 "format": "date-time"
@@ -6933,6 +6979,26 @@
                                                                   "isPublic": {
                                                                     "type": "boolean"
                                                                   },
+                                                                  "dropletsFavorited": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "data": {
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                          "type": "object",
+                                                                          "properties": {
+                                                                            "id": {
+                                                                              "type": "number"
+                                                                            },
+                                                                            "attributes": {
+                                                                              "type": "object",
+                                                                              "properties": {}
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -7482,6 +7548,26 @@
                           "type": "number",
                           "format": "float"
                         },
+                        "usersFavorited": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "attributes": {
+                                    "type": "object",
+                                    "properties": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -8003,6 +8089,20 @@
               },
               "isPublic": {
                 "type": "boolean"
+              },
+              "dropletsFavorited": {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ],
+                  "example": "string or id"
+                }
               }
             }
           }
@@ -9569,6 +9669,9 @@
                                                                                   }
                                                                                 }
                                                                               },
+                                                                              "orderIndex": {
+                                                                                "type": "integer"
+                                                                              },
                                                                               "createdAt": {
                                                                                 "type": "string",
                                                                                 "format": "date-time"
@@ -10295,6 +10398,26 @@
                                                                 "averageRating": {
                                                                   "type": "number",
                                                                   "format": "float"
+                                                                },
+                                                                "usersFavorited": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "data": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "id": {
+                                                                            "type": "number"
+                                                                          },
+                                                                          "attributes": {
+                                                                            "type": "object",
+                                                                            "properties": {}
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -11102,6 +11225,26 @@
                                     "isPublic": {
                                       "type": "boolean"
                                     },
+                                    "dropletsFavorited": {
+                                      "type": "object",
+                                      "properties": {
+                                        "data": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "number"
+                                              },
+                                              "attributes": {
+                                                "type": "object",
+                                                "properties": {}
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -11720,6 +11863,26 @@
           },
           "isPublic": {
             "type": "boolean"
+          },
+          "dropletsFavorited": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "attributes": {
+                      "type": "object",
+                      "properties": {}
+                    }
+                  }
+                }
+              }
+            }
           },
           "createdAt": {
             "type": "string",
@@ -13834,6 +13997,9 @@
                                                                     }
                                                                   }
                                                                 },
+                                                                "orderIndex": {
+                                                                  "type": "integer"
+                                                                },
                                                                 "createdAt": {
                                                                   "type": "string",
                                                                   "format": "date-time"
@@ -14176,6 +14342,26 @@
                                                   "averageRating": {
                                                     "type": "number",
                                                     "format": "float"
+                                                  },
+                                                  "usersFavorited": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "data": {
+                                                        "type": "array",
+                                                        "items": {
+                                                          "type": "object",
+                                                          "properties": {
+                                                            "id": {
+                                                              "type": "number"
+                                                            },
+                                                            "attributes": {
+                                                              "type": "object",
+                                                              "properties": {}
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -15027,6 +15213,26 @@
                         "isPublic": {
                           "type": "boolean"
                         },
+                        "dropletsFavorited": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "attributes": {
+                                    "type": "object",
+                                    "properties": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -15362,6 +15568,20 @@
               "averageRating": {
                 "type": "number",
                 "format": "float"
+              },
+              "usersFavorited": {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ],
+                  "example": "string or id"
+                }
               }
             }
           }
@@ -17837,6 +18057,26 @@
                                                                               "isPublic": {
                                                                                 "type": "boolean"
                                                                               },
+                                                                              "dropletsFavorited": {
+                                                                                "type": "object",
+                                                                                "properties": {
+                                                                                  "data": {
+                                                                                    "type": "array",
+                                                                                    "items": {
+                                                                                      "type": "object",
+                                                                                      "properties": {
+                                                                                        "id": {
+                                                                                          "type": "number"
+                                                                                        },
+                                                                                        "attributes": {
+                                                                                          "type": "object",
+                                                                                          "properties": {}
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              },
                                                                               "createdAt": {
                                                                                 "type": "string",
                                                                                 "format": "date-time"
@@ -18159,6 +18399,9 @@
                                                           }
                                                         }
                                                       }
+                                                    },
+                                                    "orderIndex": {
+                                                      "type": "integer"
                                                     },
                                                     "createdAt": {
                                                       "type": "string",
@@ -18502,6 +18745,26 @@
                                       "averageRating": {
                                         "type": "number",
                                         "format": "float"
+                                      },
+                                      "usersFavorited": {
+                                        "type": "object",
+                                        "properties": {
+                                          "data": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "number"
+                                                },
+                                                "attributes": {
+                                                  "type": "object",
+                                                  "properties": {}
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
                                       },
                                       "createdAt": {
                                         "type": "string",
@@ -18874,6 +19137,26 @@
           "averageRating": {
             "type": "number",
             "format": "float"
+          },
+          "usersFavorited": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "attributes": {
+                      "type": "object",
+                      "properties": {}
+                    }
+                  }
+                }
+              }
+            }
           },
           "createdAt": {
             "type": "string",
@@ -20451,6 +20734,9 @@
                                                                                                 }
                                                                                               }
                                                                                             },
+                                                                                            "orderIndex": {
+                                                                                              "type": "integer"
+                                                                                            },
                                                                                             "createdAt": {
                                                                                               "type": "string",
                                                                                               "format": "date-time"
@@ -21666,6 +21952,26 @@
                                                                 "isPublic": {
                                                                   "type": "boolean"
                                                                 },
+                                                                "dropletsFavorited": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "data": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "id": {
+                                                                            "type": "number"
+                                                                          },
+                                                                          "attributes": {
+                                                                            "type": "object",
+                                                                            "properties": {}
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
                                                                 "createdAt": {
                                                                   "type": "string",
                                                                   "format": "date-time"
@@ -22214,6 +22520,26 @@
                       "averageRating": {
                         "type": "number",
                         "format": "float"
+                      },
+                      "usersFavorited": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "attributes": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        }
                       },
                       "createdAt": {
                         "type": "string",
@@ -24430,6 +24756,9 @@
                                                                   }
                                                                 }
                                                               },
+                                                              "orderIndex": {
+                                                                "type": "integer"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -24772,6 +25101,26 @@
                                                 "averageRating": {
                                                   "type": "number",
                                                   "format": "float"
+                                                },
+                                                "usersFavorited": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "data": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "id": {
+                                                            "type": "number"
+                                                          },
+                                                          "attributes": {
+                                                            "type": "object",
+                                                            "properties": {}
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -25622,6 +25971,26 @@
                       },
                       "isPublic": {
                         "type": "boolean"
+                      },
+                      "dropletsFavorited": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "attributes": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        }
                       },
                       "createdAt": {
                         "type": "string",
@@ -27889,6 +28258,9 @@
                                                                   }
                                                                 }
                                                               },
+                                                              "orderIndex": {
+                                                                "type": "integer"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -28231,6 +28603,26 @@
                                                 "averageRating": {
                                                   "type": "number",
                                                   "format": "float"
+                                                },
+                                                "usersFavorited": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "data": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "id": {
+                                                            "type": "number"
+                                                          },
+                                                          "attributes": {
+                                                            "type": "object",
+                                                            "properties": {}
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -29081,6 +29473,26 @@
                       },
                       "isPublic": {
                         "type": "boolean"
+                      },
+                      "dropletsFavorited": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "attributes": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        }
                       },
                       "createdAt": {
                         "type": "string",
@@ -31314,6 +31726,9 @@
                                                                     }
                                                                   }
                                                                 },
+                                                                "orderIndex": {
+                                                                  "type": "integer"
+                                                                },
                                                                 "createdAt": {
                                                                   "type": "string",
                                                                   "format": "date-time"
@@ -31656,6 +32071,26 @@
                                                   "averageRating": {
                                                     "type": "number",
                                                     "format": "float"
+                                                  },
+                                                  "usersFavorited": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "data": {
+                                                        "type": "array",
+                                                        "items": {
+                                                          "type": "object",
+                                                          "properties": {
+                                                            "id": {
+                                                              "type": "number"
+                                                            },
+                                                            "attributes": {
+                                                              "type": "object",
+                                                              "properties": {}
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -32506,6 +32941,26 @@
                         },
                         "isPublic": {
                           "type": "boolean"
+                        },
+                        "dropletsFavorited": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "attributes": {
+                                    "type": "object",
+                                    "properties": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
                         },
                         "createdAt": {
                           "type": "string",
@@ -35242,6 +35697,9 @@
                                                                     }
                                                                   }
                                                                 },
+                                                                "orderIndex": {
+                                                                  "type": "integer"
+                                                                },
                                                                 "createdAt": {
                                                                   "type": "string",
                                                                   "format": "date-time"
@@ -35584,6 +36042,26 @@
                                                   "averageRating": {
                                                     "type": "number",
                                                     "format": "float"
+                                                  },
+                                                  "usersFavorited": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "data": {
+                                                        "type": "array",
+                                                        "items": {
+                                                          "type": "object",
+                                                          "properties": {
+                                                            "id": {
+                                                              "type": "number"
+                                                            },
+                                                            "attributes": {
+                                                              "type": "object",
+                                                              "properties": {}
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -36434,6 +36912,26 @@
                         },
                         "isPublic": {
                           "type": "boolean"
+                        },
+                        "dropletsFavorited": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "attributes": {
+                                    "type": "object",
+                                    "properties": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
                         },
                         "createdAt": {
                           "type": "string",
@@ -38794,6 +39292,9 @@
                                                                   }
                                                                 }
                                                               },
+                                                              "orderIndex": {
+                                                                "type": "integer"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -39136,6 +39637,26 @@
                                                 "averageRating": {
                                                   "type": "number",
                                                   "format": "float"
+                                                },
+                                                "usersFavorited": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "data": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "id": {
+                                                            "type": "number"
+                                                          },
+                                                          "attributes": {
+                                                            "type": "object",
+                                                            "properties": {}
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -39987,6 +40508,26 @@
                       "isPublic": {
                         "type": "boolean"
                       },
+                      "dropletsFavorited": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "attributes": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -40266,6 +40807,9 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "orderIndex": {
+                "type": "integer"
               }
             }
           }
@@ -41746,6 +42290,9 @@
                                                                                                   }
                                                                                                 }
                                                                                               },
+                                                                                              "orderIndex": {
+                                                                                                "type": "integer"
+                                                                                              },
                                                                                               "createdAt": {
                                                                                                 "type": "string",
                                                                                                 "format": "date-time"
@@ -42961,6 +43508,26 @@
                                                                   "isPublic": {
                                                                     "type": "boolean"
                                                                   },
+                                                                  "dropletsFavorited": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "data": {
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                          "type": "object",
+                                                                          "properties": {
+                                                                            "id": {
+                                                                              "type": "number"
+                                                                            },
+                                                                            "attributes": {
+                                                                              "type": "object",
+                                                                              "properties": {}
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -43510,6 +44077,26 @@
                           "type": "number",
                           "format": "float"
                         },
+                        "usersFavorited": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "attributes": {
+                                    "type": "object",
+                                    "properties": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -43651,6 +44238,9 @@
                 }
               }
             }
+          },
+          "orderIndex": {
+            "type": "integer"
           },
           "createdAt": {
             "type": "string",
@@ -46350,6 +46940,26 @@
                                                                               "isPublic": {
                                                                                 "type": "boolean"
                                                                               },
+                                                                              "dropletsFavorited": {
+                                                                                "type": "object",
+                                                                                "properties": {
+                                                                                  "data": {
+                                                                                    "type": "array",
+                                                                                    "items": {
+                                                                                      "type": "object",
+                                                                                      "properties": {
+                                                                                        "id": {
+                                                                                          "type": "number"
+                                                                                        },
+                                                                                        "attributes": {
+                                                                                          "type": "object",
+                                                                                          "properties": {}
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              },
                                                                               "createdAt": {
                                                                                 "type": "string",
                                                                                 "format": "date-time"
@@ -46979,6 +47589,26 @@
                                       "type": "number",
                                       "format": "float"
                                     },
+                                    "usersFavorited": {
+                                      "type": "object",
+                                      "properties": {
+                                        "data": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "number"
+                                              },
+                                              "attributes": {
+                                                "type": "object",
+                                                "properties": {}
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -47120,6 +47750,9 @@
                             }
                           }
                         }
+                      },
+                      "orderIndex": {
+                        "type": "integer"
                       },
                       "createdAt": {
                         "type": "string",
@@ -48842,6 +49475,9 @@
                                                                                                   }
                                                                                                 }
                                                                                               },
+                                                                                              "orderIndex": {
+                                                                                                "type": "integer"
+                                                                                              },
                                                                                               "createdAt": {
                                                                                                 "type": "string",
                                                                                                 "format": "date-time"
@@ -50057,6 +50693,26 @@
                                                                   "isPublic": {
                                                                     "type": "boolean"
                                                                   },
+                                                                  "dropletsFavorited": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "data": {
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                          "type": "object",
+                                                                          "properties": {
+                                                                            "id": {
+                                                                              "type": "number"
+                                                                            },
+                                                                            "attributes": {
+                                                                              "type": "object",
+                                                                              "properties": {}
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -50605,6 +51261,26 @@
                         "averageRating": {
                           "type": "number",
                           "format": "float"
+                        },
+                        "usersFavorited": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "attributes": {
+                                    "type": "object",
+                                    "properties": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
                         },
                         "createdAt": {
                           "type": "string",
@@ -52772,6 +53448,9 @@
                                                                                                   }
                                                                                                 }
                                                                                               },
+                                                                                              "orderIndex": {
+                                                                                                "type": "integer"
+                                                                                              },
                                                                                               "createdAt": {
                                                                                                 "type": "string",
                                                                                                 "format": "date-time"
@@ -53987,6 +54666,26 @@
                                                                   "isPublic": {
                                                                     "type": "boolean"
                                                                   },
+                                                                  "dropletsFavorited": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "data": {
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                          "type": "object",
+                                                                          "properties": {
+                                                                            "id": {
+                                                                              "type": "number"
+                                                                            },
+                                                                            "attributes": {
+                                                                              "type": "object",
+                                                                              "properties": {}
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -54535,6 +55234,26 @@
                         "averageRating": {
                           "type": "number",
                           "format": "float"
+                        },
+                        "usersFavorited": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "attributes": {
+                                    "type": "object",
+                                    "properties": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
                         },
                         "createdAt": {
                           "type": "string",

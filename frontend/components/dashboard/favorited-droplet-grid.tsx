@@ -7,21 +7,19 @@ import { getCurrentUser } from "@/lib/auth/session";
 import { getAuthorizedUserByEmail } from "@/lib/requests/authorized-user";
 import { getEnrollmentsByAuthorizedUser } from "@/lib/requests/enrollment";
 import { EnrolledDropletsGridClient } from "./enrolled-droplets-grid-client";
+import { Lesson } from "@/types";
 
-interface Lesson {
-  id: number;
-  name: string;
-  slug: string;
-}
-
-export async function ArchivedDropletsGrid({ sortKey }: { sortKey?: string }) {
+export async function FavoriteDropletsGrid({ sortKey }: { sortKey?: string }) {
   const user = await getCurrentUser();
   if (!user?.email) return null;
 
   const authorizedUser = await getAuthorizedUserByEmail(user.email);
   const enrollments = await getEnrollmentsByAuthorizedUser(authorizedUser.id);
 
-  const filteredEnrollments = enrollments.filter((e) => e.isArchived === true);
+  // Fixed: Added return and compare IDs instead of objects
+  const filteredEnrollments = enrollments.filter((e) =>
+    e.droplet.usersFavorited?.some((user) => user.id === authorizedUser.id),
+  );
 
   const completedLessonIds = filteredEnrollments.flatMap(
     (enrollment) =>
@@ -48,9 +46,9 @@ export async function ArchivedDropletsGrid({ sortKey }: { sortKey?: string }) {
   if (!dropletsWithCompletion || dropletsWithCompletion.length === 0) {
     return (
       <Message className="mb-8 rounded-md border border-dashed border-slate-200 dark:border-slate-500 dark:bg-slate-800">
-        <MessageHeader subtitle="No Results" title="No Archived Droplets" />
+        <MessageHeader subtitle="No Results" title="No Favorited Droplets" />
         <MessageDescription>
-          You haven&apos;t archived any Droplets yet.
+          You haven&apos;t favorited any Droplets yet.
         </MessageDescription>
       </Message>
     );
@@ -64,7 +62,8 @@ export async function ArchivedDropletsGrid({ sortKey }: { sortKey?: string }) {
     <EnrolledDropletsGridClient
       dropletsWithCompletion={dropletsWithCompletion}
       completedLessonIds={completedLessonIds}
-      isArchived={true}
+      isArchived={false}
+      isFavorited={true}
       ratingsMap={ratingsMap}
       sortKey={sortKey}
       currentUser={authorizedUser}
