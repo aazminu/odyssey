@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-10-30T22:55:46.405Z"
+    "x-generation-date": "2025-11-04T20:31:46.195Z"
   },
   "x-strapi-config": {
     "plugins": ["upload"],
@@ -2086,9 +2086,6 @@
                                                                                                   }
                                                                                                 }
                                                                                               }
-                                                                                            },
-                                                                                            "orderIndex": {
-                                                                                              "type": "integer"
                                                                                             },
                                                                                             "createdAt": {
                                                                                               "type": "string",
@@ -5724,9 +5721,6 @@
                                                                                                     }
                                                                                                   }
                                                                                                 }
-                                                                                              },
-                                                                                              "orderIndex": {
-                                                                                                "type": "integer"
                                                                                               },
                                                                                               "createdAt": {
                                                                                                 "type": "string",
@@ -9614,9 +9608,6 @@
                                                                                     }
                                                                                   }
                                                                                 }
-                                                                              },
-                                                                              "orderIndex": {
-                                                                                "type": "integer"
                                                                               },
                                                                               "createdAt": {
                                                                                 "type": "string",
@@ -13940,9 +13931,6 @@
                                                                       }
                                                                     }
                                                                   }
-                                                                },
-                                                                "orderIndex": {
-                                                                  "type": "integer"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -18325,9 +18313,6 @@
                                                         }
                                                       }
                                                     },
-                                                    "orderIndex": {
-                                                      "type": "integer"
-                                                    },
                                                     "createdAt": {
                                                       "type": "string",
                                                       "format": "date-time"
@@ -20637,9 +20622,6 @@
                                                                                                   }
                                                                                                 }
                                                                                               }
-                                                                                            },
-                                                                                            "orderIndex": {
-                                                                                              "type": "integer"
                                                                                             },
                                                                                             "createdAt": {
                                                                                               "type": "string",
@@ -24647,9 +24629,6 @@
                                                                   }
                                                                 }
                                                               },
-                                                              "orderIndex": {
-                                                                "type": "integer"
-                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -28140,9 +28119,6 @@
                                                                   }
                                                                 }
                                                               },
-                                                              "orderIndex": {
-                                                                "type": "integer"
-                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -31605,9 +31581,6 @@
                                                                       }
                                                                     }
                                                                   }
-                                                                },
-                                                                "orderIndex": {
-                                                                  "type": "integer"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -35559,9 +35532,6 @@
                                                                     }
                                                                   }
                                                                 },
-                                                                "orderIndex": {
-                                                                  "type": "integer"
-                                                                },
                                                                 "createdAt": {
                                                                   "type": "string",
                                                                   "format": "date-time"
@@ -39149,9 +39119,6 @@
                                                                   }
                                                                 }
                                                               },
-                                                              "orderIndex": {
-                                                                "type": "integer"
-                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -40653,9 +40620,6 @@
                   ],
                   "example": "string or id"
                 }
-              },
-              "orderIndex": {
-                "type": "integer"
               }
             }
           }
@@ -42128,9 +42092,6 @@
                                                                                                     }
                                                                                                   }
                                                                                                 }
-                                                                                              },
-                                                                                              "orderIndex": {
-                                                                                                "type": "integer"
                                                                                               },
                                                                                               "createdAt": {
                                                                                                 "type": "string",
@@ -44064,9 +44025,6 @@
                 }
               }
             }
-          },
-          "orderIndex": {
-            "type": "integer"
           },
           "createdAt": {
             "type": "string",
@@ -47557,9 +47515,6 @@
                           }
                         }
                       },
-                      "orderIndex": {
-                        "type": "integer"
-                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -49263,9 +49218,6 @@
                                                                                                     }
                                                                                                   }
                                                                                                 }
-                                                                                              },
-                                                                                              "orderIndex": {
-                                                                                                "type": "integer"
                                                                                               },
                                                                                               "createdAt": {
                                                                                                 "type": "string",
@@ -53195,9 +53147,6 @@
                                                                                                     }
                                                                                                   }
                                                                                                 }
-                                                                                              },
-                                                                                              "orderIndex": {
-                                                                                                "type": "integer"
                                                                                               },
                                                                                               "createdAt": {
                                                                                                 "type": "string",
