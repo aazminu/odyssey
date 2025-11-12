@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-11-07T20:25:28.764Z"
+    "x-generation-date": "2025-11-12T20:37:26.047Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -1709,6 +1709,14 @@
                                                                                                 ]
                                                                                               }
                                                                                             },
+                                                                                            "blocksVersion": {
+                                                                                              "type": "string",
+                                                                                              "enum": [
+                                                                                                "v1",
+                                                                                                "v2"
+                                                                                              ]
+                                                                                            },
+                                                                                            "blocksV2": {},
                                                                                             "droplets": {
                                                                                               "type": "object",
                                                                                               "properties": {
@@ -5367,6 +5375,14 @@
                                                                                                   ]
                                                                                                 }
                                                                                               },
+                                                                                              "blocksVersion": {
+                                                                                                "type": "string",
+                                                                                                "enum": [
+                                                                                                  "v1",
+                                                                                                  "v2"
+                                                                                                ]
+                                                                                              },
+                                                                                              "blocksV2": {},
                                                                                               "droplets": {
                                                                                                 "type": "object",
                                                                                                 "properties": {
@@ -9281,6 +9297,14 @@
                                                                                   ]
                                                                                 }
                                                                               },
+                                                                              "blocksVersion": {
+                                                                                "type": "string",
+                                                                                "enum": [
+                                                                                  "v1",
+                                                                                  "v2"
+                                                                                ]
+                                                                              },
+                                                                              "blocksV2": {},
                                                                               "droplets": {
                                                                                 "type": "object",
                                                                                 "properties": {
@@ -13615,6 +13639,14 @@
                                                                     ]
                                                                   }
                                                                 },
+                                                                "blocksVersion": {
+                                                                  "type": "string",
+                                                                  "enum": [
+                                                                    "v1",
+                                                                    "v2"
+                                                                  ]
+                                                                },
+                                                                "blocksV2": {},
                                                                 "droplets": {
                                                                   "type": "object",
                                                                   "properties": {
@@ -16537,6 +16569,14 @@
                                                         ]
                                                       }
                                                     },
+                                                    "blocksVersion": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "v1",
+                                                        "v2"
+                                                      ]
+                                                    },
+                                                    "blocksV2": {},
                                                     "droplets": {
                                                       "type": "object",
                                                       "properties": {
@@ -20358,6 +20398,14 @@
                                                                                                 ]
                                                                                               }
                                                                                             },
+                                                                                            "blocksVersion": {
+                                                                                              "type": "string",
+                                                                                              "enum": [
+                                                                                                "v1",
+                                                                                                "v2"
+                                                                                              ]
+                                                                                            },
+                                                                                            "blocksV2": {},
                                                                                             "droplets": {
                                                                                               "type": "object",
                                                                                               "properties": {
@@ -24383,6 +24431,14 @@
                                                                   ]
                                                                 }
                                                               },
+                                                              "blocksVersion": {
+                                                                "type": "string",
+                                                                "enum": [
+                                                                  "v1",
+                                                                  "v2"
+                                                                ]
+                                                              },
+                                                              "blocksV2": {},
                                                               "droplets": {
                                                                 "type": "object",
                                                                 "properties": {
@@ -27888,6 +27944,14 @@
                                                                   ]
                                                                 }
                                                               },
+                                                              "blocksVersion": {
+                                                                "type": "string",
+                                                                "enum": [
+                                                                  "v1",
+                                                                  "v2"
+                                                                ]
+                                                              },
+                                                              "blocksV2": {},
                                                               "droplets": {
                                                                 "type": "object",
                                                                 "properties": {
@@ -31359,6 +31423,14 @@
                                                                     ]
                                                                   }
                                                                 },
+                                                                "blocksVersion": {
+                                                                  "type": "string",
+                                                                  "enum": [
+                                                                    "v1",
+                                                                    "v2"
+                                                                  ]
+                                                                },
+                                                                "blocksV2": {},
                                                                 "droplets": {
                                                                   "type": "object",
                                                                   "properties": {
@@ -35333,6 +35405,14 @@
                                                                     ]
                                                                   }
                                                                 },
+                                                                "blocksVersion": {
+                                                                  "type": "string",
+                                                                  "enum": [
+                                                                    "v1",
+                                                                    "v2"
+                                                                  ]
+                                                                },
+                                                                "blocksV2": {},
                                                                 "droplets": {
                                                                   "type": "object",
                                                                   "properties": {
@@ -38931,6 +39011,14 @@
                                                                   ]
                                                                 }
                                                               },
+                                                              "blocksVersion": {
+                                                                "type": "string",
+                                                                "enum": [
+                                                                  "v1",
+                                                                  "v2"
+                                                                ]
+                                                              },
+                                                              "blocksV2": {},
                                                               "droplets": {
                                                                 "type": "object",
                                                                 "properties": {
@@ -40732,8 +40820,7 @@
           "data": {
             "required": [
               "name",
-              "slug",
-              "blocks"
+              "slug"
             ],
             "type": "object",
             "properties": {
@@ -40768,6 +40855,14 @@
                   ]
                 }
               },
+              "blocksVersion": {
+                "type": "string",
+                "enum": [
+                  "v1",
+                  "v2"
+                ]
+              },
+              "blocksV2": {},
               "droplets": {
                 "type": "array",
                 "items": {
@@ -40904,8 +40999,7 @@
         "type": "object",
         "required": [
           "name",
-          "slug",
-          "blocks"
+          "slug"
         ],
         "properties": {
           "name": {
@@ -40939,6 +41033,14 @@
               ]
             }
           },
+          "blocksVersion": {
+            "type": "string",
+            "enum": [
+              "v1",
+              "v2"
+            ]
+          },
+          "blocksV2": {},
           "droplets": {
             "type": "object",
             "properties": {
@@ -41932,6 +42034,14 @@
                                                                                                   ]
                                                                                                 }
                                                                                               },
+                                                                                              "blocksVersion": {
+                                                                                                "type": "string",
+                                                                                                "enum": [
+                                                                                                  "v1",
+                                                                                                  "v2"
+                                                                                                ]
+                                                                                              },
+                                                                                              "blocksV2": {},
                                                                                               "droplets": {
                                                                                                 "type": "object",
                                                                                                 "properties": {
@@ -44766,6 +44876,14 @@
                           ]
                         }
                       },
+                      "blocksVersion": {
+                        "type": "string",
+                        "enum": [
+                          "v1",
+                          "v2"
+                        ]
+                      },
+                      "blocksV2": {},
                       "droplets": {
                         "type": "object",
                         "properties": {
@@ -49123,6 +49241,14 @@
                                                                                                   ]
                                                                                                 }
                                                                                               },
+                                                                                              "blocksVersion": {
+                                                                                                "type": "string",
+                                                                                                "enum": [
+                                                                                                  "v1",
+                                                                                                  "v2"
+                                                                                                ]
+                                                                                              },
+                                                                                              "blocksV2": {},
                                                                                               "droplets": {
                                                                                                 "type": "object",
                                                                                                 "properties": {
@@ -53099,6 +53225,14 @@
                                                                                                   ]
                                                                                                 }
                                                                                               },
+                                                                                              "blocksVersion": {
+                                                                                                "type": "string",
+                                                                                                "enum": [
+                                                                                                  "v1",
+                                                                                                  "v2"
+                                                                                                ]
+                                                                                              },
+                                                                                              "blocksV2": {},
                                                                                               "droplets": {
                                                                                                 "type": "object",
                                                                                                 "properties": {
