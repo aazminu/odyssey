@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-11-12T17:09:02.924Z"
+    "x-generation-date": "2025-11-07T20:25:28.764Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -3343,6 +3343,9 @@
                                                                       }
                                                                     }
                                                                   }
+                                                                },
+                                                                "website": {
+                                                                  "type": "string"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -6999,6 +7002,9 @@
                                                                       }
                                                                     }
                                                                   },
+                                                                  "website": {
+                                                                    "type": "string"
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -8103,6 +8109,9 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "website": {
+                "type": "string"
               }
             }
           }
@@ -11245,6 +11254,9 @@
                                         }
                                       }
                                     },
+                                    "website": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -11883,6 +11895,9 @@
                 }
               }
             }
+          },
+          "website": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -15233,6 +15248,9 @@
                             }
                           }
                         },
+                        "website": {
+                          "type": "string"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -18076,6 +18094,9 @@
                                                                                     }
                                                                                   }
                                                                                 }
+                                                                              },
+                                                                              "website": {
+                                                                                "type": "string"
                                                                               },
                                                                               "createdAt": {
                                                                                 "type": "string",
@@ -21971,6 +21992,9 @@
                                                                       }
                                                                     }
                                                                   }
+                                                                },
+                                                                "website": {
+                                                                  "type": "string"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -25992,6 +26016,9 @@
                           }
                         }
                       },
+                      "website": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -29494,6 +29521,9 @@
                           }
                         }
                       },
+                      "website": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -32961,6 +32991,9 @@
                               }
                             }
                           }
+                        },
+                        "website": {
+                          "type": "string"
                         },
                         "createdAt": {
                           "type": "string",
@@ -36933,6 +36966,9 @@
                             }
                           }
                         },
+                        "website": {
+                          "type": "string"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -40528,6 +40564,9 @@
                           }
                         }
                       },
+                      "website": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -43527,6 +43566,9 @@
                                                                         }
                                                                       }
                                                                     }
+                                                                  },
+                                                                  "website": {
+                                                                    "type": "string"
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
@@ -46959,6 +47001,9 @@
                                                                                     }
                                                                                   }
                                                                                 }
+                                                                              },
+                                                                              "website": {
+                                                                                "type": "string"
                                                                               },
                                                                               "createdAt": {
                                                                                 "type": "string",
@@ -50712,6 +50757,9 @@
                                                                         }
                                                                       }
                                                                     }
+                                                                  },
+                                                                  "website": {
+                                                                    "type": "string"
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
@@ -54685,6 +54733,9 @@
                                                                         }
                                                                       }
                                                                     }
+                                                                  },
+                                                                  "website": {
+                                                                    "type": "string"
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
