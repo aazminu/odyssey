@@ -11,7 +11,7 @@
       "url": "https://khouryodyssey.org"
     },
     "license": null,
-    "x-generation-date": "2025-11-12T17:39:34.293Z"
+    "x-generation-date": "2025-11-13T15:30:21.438Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -3325,6 +3325,29 @@
                                                                   "type": "boolean"
                                                                 },
                                                                 "dropletsFavorited": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "data": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "id": {
+                                                                            "type": "number"
+                                                                          },
+                                                                          "attributes": {
+                                                                            "type": "object",
+                                                                            "properties": {}
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "website": {
+                                                                  "type": "string"
+                                                                },
+                                                                "playlists_archived": {
                                                                   "type": "object",
                                                                   "properties": {
                                                                     "data": {
@@ -7019,6 +7042,29 @@
                                                                       }
                                                                     }
                                                                   },
+                                                                  "website": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "playlists_archived": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "data": {
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                          "type": "object",
+                                                                          "properties": {
+                                                                            "id": {
+                                                                              "type": "number"
+                                                                            },
+                                                                            "attributes": {
+                                                                              "type": "object",
+                                                                              "properties": {}
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -8131,6 +8177,23 @@
                 "type": "boolean"
               },
               "dropletsFavorited": {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ],
+                  "example": "string or id"
+                }
+              },
+              "website": {
+                "type": "string"
+              },
+              "playlists_archived": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -11305,6 +11368,29 @@
                                         }
                                       }
                                     },
+                                    "website": {
+                                      "type": "string"
+                                    },
+                                    "playlists_archived": {
+                                      "type": "object",
+                                      "properties": {
+                                        "data": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "number"
+                                              },
+                                              "attributes": {
+                                                "type": "object",
+                                                "properties": {}
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -11925,6 +12011,29 @@
             "type": "boolean"
           },
           "dropletsFavorited": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "attributes": {
+                      "type": "object",
+                      "properties": {}
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "website": {
+            "type": "string"
+          },
+          "playlists_archived": {
             "type": "object",
             "properties": {
               "data": {
@@ -15313,6 +15422,29 @@
                             }
                           }
                         },
+                        "website": {
+                          "type": "string"
+                        },
+                        "playlists_archived": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "attributes": {
+                                    "type": "object",
+                                    "properties": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -18158,6 +18290,29 @@
                                                                                 "type": "boolean"
                                                                               },
                                                                               "dropletsFavorited": {
+                                                                                "type": "object",
+                                                                                "properties": {
+                                                                                  "data": {
+                                                                                    "type": "array",
+                                                                                    "items": {
+                                                                                      "type": "object",
+                                                                                      "properties": {
+                                                                                        "id": {
+                                                                                          "type": "number"
+                                                                                        },
+                                                                                        "attributes": {
+                                                                                          "type": "object",
+                                                                                          "properties": {}
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              },
+                                                                              "website": {
+                                                                                "type": "string"
+                                                                              },
+                                                                              "playlists_archived": {
                                                                                 "type": "object",
                                                                                 "properties": {
                                                                                   "data": {
@@ -22053,6 +22208,29 @@
                                                                   "type": "boolean"
                                                                 },
                                                                 "dropletsFavorited": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "data": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "id": {
+                                                                            "type": "number"
+                                                                          },
+                                                                          "attributes": {
+                                                                            "type": "object",
+                                                                            "properties": {}
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "website": {
+                                                                  "type": "string"
+                                                                },
+                                                                "playlists_archived": {
                                                                   "type": "object",
                                                                   "properties": {
                                                                     "data": {
@@ -26132,6 +26310,29 @@
                           }
                         }
                       },
+                      "website": {
+                        "type": "string"
+                      },
+                      "playlists_archived": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "attributes": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -29654,6 +29855,29 @@
                           }
                         }
                       },
+                      "website": {
+                        "type": "string"
+                      },
+                      "playlists_archived": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "attributes": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -33123,6 +33347,29 @@
                           "type": "boolean"
                         },
                         "dropletsFavorited": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "attributes": {
+                                    "type": "object",
+                                    "properties": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "website": {
+                          "type": "string"
+                        },
+                        "playlists_archived": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -37133,6 +37380,29 @@
                             }
                           }
                         },
+                        "website": {
+                          "type": "string"
+                        },
+                        "playlists_archived": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "attributes": {
+                                    "type": "object",
+                                    "properties": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -40748,6 +41018,29 @@
                           }
                         }
                       },
+                      "website": {
+                        "type": "string"
+                      },
+                      "playlists_archived": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "attributes": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -43729,6 +44022,29 @@
                                                                     "type": "boolean"
                                                                   },
                                                                   "dropletsFavorited": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "data": {
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                          "type": "object",
+                                                                          "properties": {
+                                                                            "id": {
+                                                                              "type": "number"
+                                                                            },
+                                                                            "attributes": {
+                                                                              "type": "object",
+                                                                              "properties": {}
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "website": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "playlists_archived": {
                                                                     "type": "object",
                                                                     "properties": {
                                                                       "data": {
@@ -47181,6 +47497,29 @@
                                                                                 "type": "boolean"
                                                                               },
                                                                               "dropletsFavorited": {
+                                                                                "type": "object",
+                                                                                "properties": {
+                                                                                  "data": {
+                                                                                    "type": "array",
+                                                                                    "items": {
+                                                                                      "type": "object",
+                                                                                      "properties": {
+                                                                                        "id": {
+                                                                                          "type": "number"
+                                                                                        },
+                                                                                        "attributes": {
+                                                                                          "type": "object",
+                                                                                          "properties": {}
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              },
+                                                                              "website": {
+                                                                                "type": "string"
+                                                                              },
+                                                                              "playlists_archived": {
                                                                                 "type": "object",
                                                                                 "properties": {
                                                                                   "data": {
@@ -50968,6 +51307,29 @@
                                                                     "type": "boolean"
                                                                   },
                                                                   "dropletsFavorited": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "data": {
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                          "type": "object",
+                                                                          "properties": {
+                                                                            "id": {
+                                                                              "type": "number"
+                                                                            },
+                                                                            "attributes": {
+                                                                              "type": "object",
+                                                                              "properties": {}
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "website": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "playlists_archived": {
                                                                     "type": "object",
                                                                     "properties": {
                                                                       "data": {
@@ -54981,6 +55343,29 @@
                                                                     "type": "boolean"
                                                                   },
                                                                   "dropletsFavorited": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                      "data": {
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                          "type": "object",
+                                                                          "properties": {
+                                                                            "id": {
+                                                                              "type": "number"
+                                                                            },
+                                                                            "attributes": {
+                                                                              "type": "object",
+                                                                              "properties": {}
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "website": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "playlists_archived": {
                                                                     "type": "object",
                                                                     "properties": {
                                                                       "data": {
