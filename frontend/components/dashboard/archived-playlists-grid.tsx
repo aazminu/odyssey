@@ -10,7 +10,7 @@ import { getUserDueDates } from "@/lib/requests/groups";
 import { UserPlaylistsClient } from "./user-playlists-client";
 import { Lesson, Playlist } from "@/types";
 
-export async function UserPlaylistsGrid({ sortKey }: { sortKey?: string }) {
+export async function ArchivedPlaylistsGrid({ sortKey }: { sortKey?: string }) {
   const user = await getCurrentUser();
   if (!user?.email) return null;
 
@@ -21,7 +21,7 @@ export async function UserPlaylistsGrid({ sortKey }: { sortKey?: string }) {
           droplets: {
             populate: {
               lessons: {
-                fields: ["id", "name", "slug"],
+                fields: ["*"],
               },
             },
           },
@@ -68,21 +68,16 @@ export async function UserPlaylistsGrid({ sortKey }: { sortKey?: string }) {
     },
   );
 
-  const activePlaylists = allPlaylists.filter(
-    (playlist) =>
-      !playlist.users_archived?.some((user) => user.id === authorizedUser.id),
+  const allArchivedPlaylists = allPlaylists.filter((playlist) =>
+    playlist.users_archived?.some((user) => user.id === authorizedUser.id),
   );
 
-  const publicPlaylists = activePlaylists.filter((p: Playlist) => p.isPublic);
-  const customPlaylists = activePlaylists.filter((p: Playlist) => !p.isPublic);
-
-  if (!activePlaylists || activePlaylists.length === 0) {
+  if (!allArchivedPlaylists || allArchivedPlaylists.length === 0) {
     return (
-      <Message className="mb-8 rounded-md border border-dashed border-slate-200">
-        <MessageHeader subtitle="No Results" title="No Saved Playlists" />
+      <Message className="mb-8 rounded-md border border-dashed border-slate-200 dark:border-slate-500 dark:bg-slate-800">
+        <MessageHeader subtitle="No Results" title="No Archived Playlists" />
         <MessageDescription>
-          You haven&apos;t saved any playlists yet. Browse the explore page to
-          find playlists to save.
+          You haven&apos;t archived any Playlists yet.
         </MessageDescription>
       </Message>
     );
@@ -92,12 +87,7 @@ export async function UserPlaylistsGrid({ sortKey }: { sortKey?: string }) {
   if (sortKey) {
     const [field, direction] = sortKey.split(":");
     if (field === "name") {
-      customPlaylists?.sort((a, b) => {
-        return direction === "asc"
-          ? a.name.localeCompare(b.name)
-          : b.name.localeCompare(a.name);
-      });
-      publicPlaylists?.sort((a, b) => {
+      allArchivedPlaylists?.sort((a, b) => {
         return direction === "asc"
           ? a.name.localeCompare(b.name)
           : b.name.localeCompare(a.name);
@@ -107,11 +97,11 @@ export async function UserPlaylistsGrid({ sortKey }: { sortKey?: string }) {
 
   return (
     <UserPlaylistsClient
-      customPlaylists={customPlaylists}
-      publicPlaylists={publicPlaylists}
+      customPlaylists={allArchivedPlaylists}
+      publicPlaylists={[]}
       dueDates={dueDates}
+      isArchived={true}
       dashboardPage={true}
-      isArchived={false}
     />
   );
 }
