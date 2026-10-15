@@ -42,21 +42,22 @@ class CurriculumDAGValidator:
         by_slug: Dict[str, DropletNode] = {}
         invalid_slugs: List[str] = []
         for d in droplets:
-            if not SLUG_RE.match(d.slug) or d.estimated_minutes < 0:
-                invalid_slugs.append(d.slug)
+            if not SLUG_RE.match(d.slug) or d.estimated_minutes < 0 or d.slug in by_slug:
+                if d.slug not in invalid_slugs:
+                    invalid_slugs.append(d.slug)
             by_slug[d.slug] = d
 
         missing_prereqs: Dict[str, List[str]] = {}
-        in_degree: Dict[str, int] = {d.slug: 0 for d in droplets}
-        dependents: Dict[str, List[str]] = {d.slug: [] for d in droplets}
+        in_degree: Dict[str, int] = {slug: 0 for slug in by_slug}
+        dependents: Dict[str, List[str]] = {slug: [] for slug in by_slug}
 
-        for d in droplets:
-            for p in d.prerequisites:
+        for slug, d in by_slug.items():
+            for p in dict.fromkeys(d.prerequisites):
                 if p not in by_slug:
-                    missing_prereqs.setdefault(d.slug, []).append(p)
+                    missing_prereqs.setdefault(slug, []).append(p)
                 else:
-                    in_degree[d.slug] += 1
-                    dependents[p].append(d.slug)
+                    in_degree[slug] += 1
+                    dependents[p].append(slug)
 
         # Kahn's topological sort + longest-path dynamic programming
         ready = sorted([s for s, deg in in_degree.items() if deg == 0])
@@ -77,15 +78,36 @@ class CurriculumDAGValidator:
                     ready.append(nxt)
                     ready.sort()
 
-        cycle_nodes = sorted([s for s, deg in in_degree.items() if deg > 0])
-        is_valid = (not cycle_nodes) and (not missing_prereqs) and (not invalid_slugs)
+        unvisited = {s for s, deg in in_degree.items() if deg > 0}
+        cycle_nodes: List[str] = []
+        for start in sorted(unvisited):
+            # A node belongs to a directed cycle iff it has a non-empty directed path back to itself
+            stack = [nxt for nxt in dependents[start] if nxt in unvisited]
+            seen: Set[str] = set()
+            in_cycle = False
+            while stack:
+                node = stack.pop()
+                if node == start:
+                    in_cycle = True
+                    break
+                if node in seen:
+                    continue
+                seen.add(node)
+                for nxt in dependents[node]:
+                    if nxt in unvisited and nxt not in seen:
+                        stack.append(nxt)
+            if in_cycle:
+                cycle_nodes.append(start)
+
+        is_valid = (not unvisited) and (not missing_prereqs) and (not invalid_slugs)
         crit_minutes = max(longest_to.values()) if is_valid and longest_to else 0
 
         return CurriculumValidationReport(
             is_valid_dag=is_valid,
-            topological_order=topo_order if not cycle_nodes else [],
+            topological_order=topo_order if not unvisited else [],
             cycle_nodes=cycle_nodes,
             missing_prereqs=missing_prereqs,
             invalid_slugs=invalid_slugs,
             critical_path_minutes=crit_minutes,
         )
+

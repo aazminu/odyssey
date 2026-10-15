@@ -28,14 +28,17 @@ def test_cycle_and_missing_prerequisite_detection() -> None:
     cyclic = [
         DropletNode("mod-a", "Module A", 20, ("mod-b",)),
         DropletNode("mod-b", "Module B", 25, ("mod-a",)),
+        DropletNode("mod-c", "Downstream Acyclic Module C", 30, ("mod-b",)),
     ]
     rep_cycle = validator.validate(cyclic)
     assert rep_cycle.is_valid_dag is False
+    # Downstream acyclic node mod-c must not be falsely reported as a cycle member
     assert rep_cycle.cycle_nodes == ["mod-a", "mod-b"]
 
     missing = [
-        DropletNode("advanced-docker", "Advanced Docker", 35, ("linux-shell",)),
+        DropletNode("advanced-docker", "Advanced Docker", 35, ("linux-shell", "linux-shell")),
     ]
     rep_missing = validator.validate(missing)
     assert rep_missing.is_valid_dag is False
     assert rep_missing.missing_prereqs == {"advanced-docker": ["linux-shell"]}
+
