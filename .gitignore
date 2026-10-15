@@ -45,3 +45,11 @@ docker-compose.playwright.yml
 backend/src/extensions/documentation/documentation/
 
 */auth.json.next/
+
+.venv/
+
+.pytest_cache/
+
+__pycache__/
+
+*.egg-info/
