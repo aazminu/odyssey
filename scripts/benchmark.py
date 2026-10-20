@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import random
 import sys
 from pathlib import Path
 from typing import Any, Dict, List, Sequence
@@ -13,16 +14,22 @@ from curriculum_dag_validator import CurriculumDAGValidator, DropletNode
 
 def run_benchmark(seed: int = 42) -> List[Dict[str, Any]]:
     """Run reproducible Odyssey curriculum droplet DAG validation and critical-path benchmarks."""
-    _ = seed
+    rng = random.Random(seed)
     validator = CurriculumDAGValidator()
 
     # 1. Acyclic full-stack learning pathway
+    capstone_mins = 90 + rng.randint(-5, 5)
     valid_pathway = [
         DropletNode("git-fundamentals", "Git Fundamentals", 30, ()),
         DropletNode("typescript-basics", "TypeScript Basics", 45, ("git-fundamentals",)),
         DropletNode("nextjs-routing", "Next.js App Router", 60, ("typescript-basics",)),
         DropletNode("strapi-cms", "Strapi Headless CMS", 40, ("git-fundamentals",)),
-        DropletNode("odyssey-fullstack", "Full-Stack Odyssey Capstone", 90, ("nextjs-routing", "strapi-cms")),
+        DropletNode(
+            "odyssey-fullstack",
+            "Full-Stack Odyssey Capstone",
+            capstone_mins,
+            ("nextjs-routing", "strapi-cms"),
+        ),
     ]
     rep_valid = validator.validate(valid_pathway)
 
@@ -121,8 +128,12 @@ def main(argv: Sequence[str] | None = None) -> int:
         else format_markdown_table(rows)
     )
     if args.output is not None:
-        args.output.parent.mkdir(parents=True, exist_ok=True)
-        args.output.write_text(rendered + "\n", encoding="utf-8")
+        try:
+            args.output.parent.mkdir(parents=True, exist_ok=True)
+            args.output.write_text(rendered + "\n", encoding="utf-8")
+        except OSError as exc:
+            print(f"Error writing output to {args.output}: {exc}", file=sys.stderr)
+            return 1
     print(rendered)
     return 0
 
